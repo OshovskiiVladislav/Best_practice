@@ -4,8 +4,9 @@
 + [Lesson 2. Group Anagrams](#Leetcode-Lesson-2) ![icon][done]
 + [Lesson 3. Plus One](#Leetcode-Lesson-3) ![icon][done]
 + [Lesson 4. Container With Most Water](#Leetcode-Lesson-4) ![icon][done]
-
-
++ [Lesson 5. Longest Common Prefix](#Leetcode-Lesson-5) ![icon][done]
++ [Lesson 6. Palindrome Number](#Leetcode-Lesson-6) ![icon][done]
+  
 [Список разделов](README.md)
 
 [done]:src/main/resources/image/done.png
@@ -117,7 +118,7 @@ Constraints:
 0 <= digits[i] <= 9
 ```
 
-#Leetcode Lesson 4
+## Leetcode Lesson 4
 
 Container With Most Water (Medium)
 -
@@ -158,4 +159,73 @@ n == height.length
 2 <= n <= 105
 0 <= height[i] <= 104
 ```
-        
+
+
+## Leetcode Lesson 5 
+
+Longest Common Prefix (Easy)
+-
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+Example 1:
+```java
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+```
+Example 2:
+```java
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+```
+
+Constraints:
+```java
+1 <= strs.length <= 200
+0 <= strs[i].length <= 200
+strs[i] consists of only lower-case English letters.
+```
+
+
+## Leetcode Lesson 6
+
+Palindrome Number (Easy)
+-
+Given an integer x, return true if x is palindrome integer.
+
+An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not.
+
+
+
+Example 1:
+```java
+
+Input: x = 121
+Output: true
+```
+Example 2:
+```java
+Input: x = -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+```
+Example 3:
+```java
+Input: x = 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+```
+Example 4:
+```java
+Input: x = -101
+Output: false
+```
+
+Constraints:
+```java
+-231 <= x <= 231 - 1
+```
+
+Follow up: Could you solve it without converting the integer to a string?

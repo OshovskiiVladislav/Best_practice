@@ -16,7 +16,6 @@
 + [Lesson 13. Головоломка про ферзей](#ACMP-Lesson-13) ![icon][done]
 + [Lesson 14. Ролевая игра](#ACMP-Lesson-14) ![icon][done]
 + [Lesson 15. Номера автобусов](#ACMP-Lesson-15) ![icon][done]
-+ [Lesson 16. Миша и негатив](#ACMP-Lesson-16) ![icon][done]
 
 
 [Список разделов](README.md)

@@ -10,6 +10,8 @@
 + [Lesson 2. Group Anagrams](leetcode.md#Leetcode-Lesson-2) 
 + [Lesson 3. Plus One](leetcode.md#Leetcode-Lesson-3) 
 + [Lesson 4. Container With Most Water](leetcode.md#Leetcode-Lesson-4) 
++ [Lesson 5. Longest Common Prefix](leetcode.md#Leetcode-Lesson-5) 
++ [Lesson 6. Palindrome Number](leetcode.md#Leetcode-Lesson-6) 
 
 
 ## Tasks from acmp
@@ -27,8 +29,7 @@
 + [Lesson 12. Время прибытия](acmp.md#ACMP-Lesson-12) 
 + [Lesson 13. Головоломка про ферзей](acmp.md#ACMP-Lesson-13) 
 + [Lesson 14. Ролевая игра](acmp.md#ACMP-Lesson-14) 
-+ [Lesson 15. Номера автобусов](acmp.md#ACMP-Lesson-15) 
-+ [Lesson 16. Миша и негатив](acmp.md#ACMP-Lesson-16) 
++ [Lesson 15. Номера автобусов](acmp.md#ACMP-Lesson-15)
 
 
 ## Tasks from other sources
@@ -40,6 +41,6 @@
 + [Lesson 6. Метод сколько повторяется каждое из чисел](other.md#other-Lesson-6) 
 + [Lesson 7. Развернуть собственный лист](other.md#other-Lesson-7) 
 + [Lesson 8. C помощью какой коллекции можно развернуть массив](other.md#other-Lesson-8) 
-+ [Lesson 9. Cоздайте комментарий который будет выполнятся](other.md#other-Lesson-9) ]
++ [Lesson 9. Cоздайте комментарий который будет выполнятся](other.md#other-Lesson-9) 
 + [Lesson 10. Создание бесконечного цикла на пустом месте](other.md#other-Lesson-10) 
 + [Lesson 11. Cоздать именованный цикл](other.md#other-Lesson-11) 
