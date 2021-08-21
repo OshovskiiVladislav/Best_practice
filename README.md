@@ -44,3 +44,4 @@
 + [Lesson 9. Cоздайте комментарий который будет выполнятся](other.md#other-Lesson-9) 
 + [Lesson 10. Создание бесконечного цикла на пустом месте](other.md#other-Lesson-10) 
 + [Lesson 11. Cоздать именованный цикл](other.md#other-Lesson-11) 
++ [Lesson 12. Вычисление квадратного корня без библиотечных методов](other.md#other-Lesson-12) 

@@ -2,7 +2,7 @@ package com.oshovskii.practice.leetcode.lesson6;
 
 public class Solution {
     public static void main(String[] args) {
-        System.out.println(isPalindrome(11111111));
+        System.out.println(isPalindrome(1441));
     }
     public static boolean isPalindrome(int x) {
         if (x < 0) {
