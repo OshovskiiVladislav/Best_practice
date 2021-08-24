@@ -42,6 +42,8 @@ y = Fn-1(Fn-2(…F2(F1(x))))
 Пример
 ![UML ACMP 1](src/main/resources/image/acmp1.png)
 
+[к оглавлению](#Tasks-from-acmp)
+
 ## ACMP Lesson 2
 
 A+B
@@ -57,6 +59,8 @@ A+B
 
 Пример
 ![ACMP 2](src/main/resources/image/acmp2.png)
+
+[к оглавлению](#Tasks-from-acmp)
 
 ## ACMP Lesson 3
 
@@ -76,6 +80,8 @@ A+B
 Пример
 ![ACMP 3](src/main/resources/image/acmp3.png)
 
+[к оглавлению](#Tasks-from-acmp)
+
 ## ACMP Lesson 4
 
 Спирт
@@ -94,6 +100,7 @@ A+B
 Примеры
 ![ACMP 4](src/main/resources/image/acmp4.png)
 
+[к оглавлению](#Tasks-from-acmp)
 
 ## ACMP Lesson 5
 
@@ -116,6 +123,8 @@ A+B
 Примеры
 ![ACMP 5](src/main/resources/image/acmp5.png)
 
+[к оглавлению](#Tasks-from-acmp)
+
 ## ACMP Lesson 6
 
 Орфография
@@ -133,6 +142,8 @@ A+B
 
 Примеры
 ![ACMP 6](src/main/resources/image/acmp6.png)
+
+[к оглавлению](#Tasks-from-acmp)
 
 ## ACMP Lesson 7
 
@@ -155,6 +166,8 @@ A+B
 Примеры
 ![ACMP 7](src/main/resources/image/acmp7.png)
 
+[к оглавлению](#Tasks-from-acmp)
+
 ## ACMP Lesson 8
 
 Нули
@@ -170,6 +183,8 @@ A+B
 
 Пример
 ![ACMP 8](src/main/resources/image/acmp8.png)
+
+[к оглавлению](#Tasks-from-acmp)
 
 ## ACMP Lesson 9
 
@@ -187,6 +202,7 @@ A+B
 Примеры
 ![ACMP 9](src/main/resources/image/acmp9.png)
 
+[к оглавлению](#Tasks-from-acmp)
 
 ## ACMP Lesson 10
 
@@ -211,6 +227,7 @@ A+B
 1, 5, 9, 13, 17, 21, …</br>
 В данной последовательности D=4, поэтому A1=1, A2=A1+D=5, A3=A1+2*D=9, и т.д. Поскольку нам нужно было найти 3й элемент прогрессии, то ответом на задачу является число 9.
 
+[к оглавлению](#Tasks-from-acmp)
 
 ## ACMP Lesson 11 
 
@@ -231,6 +248,7 @@ A+B
 Примеры
 ![ACMP 11](src/main/resources/image/acmp11.png)
 
+[к оглавлению](#Tasks-from-acmp)
 
 ## ACMP Lesson 12
 

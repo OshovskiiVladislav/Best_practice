@@ -6,7 +6,8 @@
 + [Lesson 4. Container With Most Water](#Leetcode-Lesson-4) ![icon][done]
 + [Lesson 5. Longest Common Prefix](#Leetcode-Lesson-5) ![icon][done]
 + [Lesson 6. Palindrome Number](#Leetcode-Lesson-6) ![icon][done]
-  
++ [Lesson 7. Two Sum](#Leetcode-Lesson-7) ![icon][done]
+
 [Список разделов](README.md)
 
 [done]:src/main/resources/image/done.png
@@ -20,8 +21,6 @@ Given a string s and an array of strings words, determine whether s is a prefix 
 A string s is a prefix string of words if s can be made by concatenating the first k strings in words for some positive k no larger than words.length.
 
 Return true if s is a prefix string of words, or false otherwise.
-
-
 
 Example 1:
 ```java
@@ -47,7 +46,7 @@ Constraints:
 words[i] and s consist of only lowercase English letters.
 ```
 
-
+[к оглавлению](#Tasks-from-leetcode)
 
 ## Leetcode Lesson 2 
 
@@ -82,6 +81,7 @@ Constraints:
 strs[i] consists of lower-case English letters.
 ```
 
+[к оглавлению](#Tasks-from-leetcode)
 
 ## Leetcode Lesson 3
 
@@ -117,6 +117,8 @@ Constraints:
 1 <= digits.length <= 100
 0 <= digits[i] <= 9
 ```
+
+[к оглавлению](#Tasks-from-leetcode)
 
 ## Leetcode Lesson 4
 
@@ -160,6 +162,7 @@ n == height.length
 0 <= height[i] <= 104
 ```
 
+[к оглавлению](#Tasks-from-leetcode)
 
 ## Leetcode Lesson 5 
 
@@ -188,6 +191,7 @@ Constraints:
 strs[i] consists of only lower-case English letters.
 ```
 
+[к оглавлению](#Tasks-from-leetcode)
 
 ## Leetcode Lesson 6
 
@@ -196,8 +200,6 @@ Palindrome Number (Easy)
 Given an integer x, return true if x is palindrome integer.
 
 An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not.
-
-
 
 Example 1:
 ```java
@@ -229,3 +231,44 @@ Constraints:
 ```
 
 Follow up: Could you solve it without converting the integer to a string?
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 7
+
+Two Sum (Easy)
+-
+Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
+You may assume that each input would have **exactly one solution**, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+Example 1:
+```java
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Output: Because nums[0] + nums[1] == 9, we return [0, 1].
+```
+Example 2:
+```java
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+```
+Example 3:
+```java
+Input: nums = [3,3], target = 6
+Output: [0,1]
+```
+
+Constraints:
+```java
+2 <= nums.length <= 104
+-109 <= nums[i] <= 109
+-109 <= target <= 109
+Only one valid answer exists.
+```
+
+Follow-up: Can you come up with an algorithm that is less than `O(n2)` time complexity?
+
+[к оглавлению](#Tasks-from-leetcode)

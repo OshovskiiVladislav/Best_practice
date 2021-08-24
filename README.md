@@ -12,6 +12,8 @@
 + [Lesson 4. Container With Most Water](leetcode.md#Leetcode-Lesson-4) 
 + [Lesson 5. Longest Common Prefix](leetcode.md#Leetcode-Lesson-5) 
 + [Lesson 6. Palindrome Number](leetcode.md#Leetcode-Lesson-6) 
++ [Lesson 7. Two Sum](leetcode.md#Leetcode-Lesson-7) 
+
 
 
 ## Tasks from acmp
