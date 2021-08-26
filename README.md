@@ -13,7 +13,10 @@
 + [Lesson 5. Longest Common Prefix](leetcode.md#Leetcode-Lesson-5) 
 + [Lesson 6. Palindrome Number](leetcode.md#Leetcode-Lesson-6) 
 + [Lesson 7. Two Sum](leetcode.md#Leetcode-Lesson-7) 
-
++ [Lesson 8. Reverse Integer](leetcode.md#Leetcode-Lesson-8) 
++ [Lesson 9. Reverse String](leetcode.md#Leetcode-Lesson-9)
++ [Lesson 10. Fibonacci Number](leetcode.md#Leetcode-Lesson-10) 
++ [Lesson 11. Power of Two](leetcode.md#Leetcode-Lesson-11) 
 
 
 ## Tasks from acmp

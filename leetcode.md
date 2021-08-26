@@ -7,7 +7,11 @@
 + [Lesson 5. Longest Common Prefix](#Leetcode-Lesson-5) ![icon][done]
 + [Lesson 6. Palindrome Number](#Leetcode-Lesson-6) ![icon][done]
 + [Lesson 7. Two Sum](#Leetcode-Lesson-7) ![icon][done]
-
++ [Lesson 8. Reverse Integer](#Leetcode-Lesson-8) ![icon][done]
++ [Lesson 9. Reverse String](#Leetcode-Lesson-9) ![icon][done]
++ [Lesson 10. Fibonacci Number](#Leetcode-Lesson-10) ![icon][done]
++ [Lesson 11. Power of Two](#Leetcode-Lesson-11) ![icon][done]
+  
 [Список разделов](README.md)
 
 [done]:src/main/resources/image/done.png
@@ -270,5 +274,157 @@ Only one valid answer exists.
 ```
 
 Follow-up: Can you come up with an algorithm that is less than `O(n2)` time complexity?
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 8
+
+Reverse Integer (Easy)
+-
+Given a signed 32-bit integer `x`, return `x` with its digits reversed. 
+If reversing `x` causes the value to go outside the signed 32-bit integer range `[-231, 231 - 1]`, then return `0`.
+
+**Assume the environment does not allow you to store 64-bit integers (signed or unsigned).**
+
+Example 1:
+```java
+Input: x = 123
+Output: 321
+```
+Example 2:
+```java
+Input: x = -123
+Output: -321
+```
+Example 3:
+```java
+Input: x = 120
+Output: 21
+```
+Example 4:
+```java
+Input: x = 0
+Output: 0
+```
+
+Constraints:
+```java
+-231 <= x <= 231 - 1
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 9
+
+Reverse String (Easy)
+-
+Write a function that reverses a string. The input string is given as an array of characters `s`.
+
+Example 1:
+```java
+Input: s = ["h","e","l","l","o"]
+Output: ["o","l","l","e","h"]
+```
+Example 2:
+```java
+Input: s = ["H","a","n","n","a","h"]
+Output: ["h","a","n","n","a","H"]
+```
+
+Constraints:
+```java
+1 <= s.length <= 105
+s[i] is a printable ascii character.
+```
+
+Follow up: Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 10
+
+Fibonacci Number (Easy)
+-
+The **Fibonacci numbers**, commonly denoted `F(n)` form a sequence, called the **Fibonacci sequence**, such that each number is the sum of the two preceding ones, starting from `0` and `1`. That is,
+```java
+F(0) = 0, F(1) = 1
+F(n) = F(n - 1) + F(n - 2), for n > 1.
+Given n, calculate F(n).
+```
+
+
+Example 1:
+```java
+Input: n = 2
+Output: 1
+Explanation: F(2) = F(1) + F(0) = 1 + 0 = 1.
+```
+Example 2:
+```java
+Input: n = 3
+Output: 2
+Explanation: F(3) = F(2) + F(1) = 1 + 1 = 2.
+```
+Example 3:
+```java
+Input: n = 4
+Output: 3
+Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
+```
+
+Constraints:
+```java
+0 <= n <= 30
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 11
+
+Power of Two (Easy)
+-
+Given an integer `n`, return `true` if it is a power of two. Otherwise, return `false`.
+
+An integer `n` is a power of two, if there exists an integer `x` such that `n == 2x`.
+
+
+
+Example 1:
+```java
+Input: n = 1
+Output: true
+Explanation: 20 = 1
+```
+Example 2:
+```java
+Input: n = 16
+Output: true
+Explanation: 24 = 16
+```
+Example 3:
+```java
+Input: n = 3
+Output: false
+```
+Example 4:
+```java
+Input: n = 4
+Output: true
+```
+Example 5:
+```java
+Input: n = 5
+Output: false
+```
+
+Constraints:
+```java
+-231 <= n <= 231 - 1
+```
+
 
 [к оглавлению](#Tasks-from-leetcode)

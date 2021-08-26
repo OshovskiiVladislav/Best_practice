@@ -22,7 +22,7 @@ public class Solution {
     }
 
     /**
-     * O(1) time complexity
+     * O(N) time complexity
      * @param nums - array of integers
      * @param target - integer number
      * @return int[]
@@ -38,7 +38,6 @@ public class Solution {
                 return new int[] {i, map.get(requiredNumber)};
             }
         }
-
         throw new IllegalArgumentException("No solution for  defined input data!");
     }
 
