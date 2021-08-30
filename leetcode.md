@@ -11,7 +11,9 @@
 + [Lesson 9. Reverse String](#Leetcode-Lesson-9) ![icon][done]
 + [Lesson 10. Fibonacci Number](#Leetcode-Lesson-10) ![icon][done]
 + [Lesson 11. Power of Two](#Leetcode-Lesson-11) ![icon][done]
-  
++ [Lesson 12. Contains Duplicate](#Leetcode-Lesson-11) ![icon][done]
+
+
 [Список разделов](README.md)
 
 [done]:src/main/resources/image/done.png
@@ -426,5 +428,72 @@ Constraints:
 -231 <= n <= 231 - 1
 ```
 
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 12
+
+Contains Duplicate (Easy)
+-
+Given an integer array `nums`, return `true` if any value appears **at least twice** in the array, and return `false` if every element is distinct.
+
+Example 1:
+```java
+Input: nums = [1,2,3,1]
+Output: true
+```
+Example 2:
+```java
+Input: nums = [1,2,3,4]
+Output: false
+```
+Example 3:
+```java
+Input: nums = [1,1,1,3,3,4,3,2,4,2]
+Output: true
+```
+
+Constraints:
+```java
+1 <= nums.length <= 105
+-109 <= nums[i] <= 109
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 13
+
+Length of Last Word (Easy)
+-
+Given a string `s` consisting of some words separated by some number of spaces, return the length of the **last** word in the string.
+A **word** is a maximal substring consisting of non-space characters only.
+
+Example 1:
+```java
+Input: s = "Hello World"
+Output: 5
+Explanation: The last word is "World" with length 5.
+```
+Example 2:
+```java
+Input: s = "   fly me   to   the moon  "
+Output: 4
+Explanation: The last word is "moon" with length 4.
+```
+Example 3:
+```java
+Input: s = "luffy is still joyboy"
+Output: 6
+Explanation: The last word is "joyboy" with length 6.
+```
+
+Constraints:
+```java
+1 <= s.length <= 104
+s consists of only English letters and spaces ' '.
+There will be at least one word in s.
+```
 
 [к оглавлению](#Tasks-from-leetcode)
