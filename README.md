@@ -17,7 +17,8 @@
 + [Lesson 9. Reverse String](leetcode.md#Leetcode-Lesson-9)
 + [Lesson 10. Fibonacci Number](leetcode.md#Leetcode-Lesson-10) 
 + [Lesson 11. Power of Two](leetcode.md#Leetcode-Lesson-11) 
-+ [Lesson 12. Contains Duplicate](leetcode.md#Leetcode-Lesson-11) 
++ [Lesson 12. Contains Duplicate](leetcode.md#Leetcode-Lesson-12) 
++ [Lesson 13. Length of Last Word](leetcode.md#Leetcode-Lesson-13)
 
 
 ## Tasks from acmp

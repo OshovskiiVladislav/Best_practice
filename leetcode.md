@@ -11,8 +11,8 @@
 + [Lesson 9. Reverse String](#Leetcode-Lesson-9) ![icon][done]
 + [Lesson 10. Fibonacci Number](#Leetcode-Lesson-10) ![icon][done]
 + [Lesson 11. Power of Two](#Leetcode-Lesson-11) ![icon][done]
-+ [Lesson 12. Contains Duplicate](#Leetcode-Lesson-11) ![icon][done]
-
++ [Lesson 12. Contains Duplicate](#Leetcode-Lesson-12) ![icon][done]
++ [Lesson 13. Length of Last Word](#Leetcode-Lesson-13) ![icon][done]
 
 [Список разделов](README.md)
 
