@@ -13,6 +13,8 @@
 + [Lesson 11. Power of Two](#Leetcode-Lesson-11) ![icon][done]
 + [Lesson 12. Contains Duplicate](#Leetcode-Lesson-12) ![icon][done]
 + [Lesson 13. Length of Last Word](#Leetcode-Lesson-13) ![icon][done]
++ [Lesson 14. Valid Parentheses](#Leetcode-Lesson-14) ![icon][done]
+
 
 [Список разделов](README.md)
 
@@ -494,6 +496,51 @@ Constraints:
 1 <= s.length <= 104
 s consists of only English letters and spaces ' '.
 There will be at least one word in s.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 14
+
+Valid Parentheses (Easy)
+-
+Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
+
+An input string is valid if:
+
+1. Open brackets must be closed by the same type of brackets.
+2. Open brackets must be closed in the correct order.
+
+Example 1:
+```java
+Input: s = "()"
+Output: true
+```
+Example 2:
+```java
+Input: s = "()[]{}"
+Output: true
+```
+Example 3:
+```java
+Input: s = "(]"
+Output: false
+```
+Example 4:
+```java
+Input: s = "([)]"
+Output: false
+```
+Example 5:
+```java
+Input: s = "{[]}"
+Output: true
+```
+Constraints:
+```java
+1 <= s.length <= 104
+s consists of parentheses only '()[]{}'.
 ```
 
 [к оглавлению](#Tasks-from-leetcode)

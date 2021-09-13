@@ -19,7 +19,7 @@
 + [Lesson 11. Power of Two](leetcode.md#Leetcode-Lesson-11) 
 + [Lesson 12. Contains Duplicate](leetcode.md#Leetcode-Lesson-12) 
 + [Lesson 13. Length of Last Word](leetcode.md#Leetcode-Lesson-13)
-
++ [Lesson 14. Valid Parentheses](leetcode.md#Leetcode-Lesson-14)
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 
