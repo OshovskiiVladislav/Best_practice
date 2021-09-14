@@ -14,6 +14,7 @@
 + [Lesson 12. Contains Duplicate](#Leetcode-Lesson-12) ![icon][done]
 + [Lesson 13. Length of Last Word](#Leetcode-Lesson-13) ![icon][done]
 + [Lesson 14. Valid Parentheses](#Leetcode-Lesson-14) ![icon][done]
++ [Lesson 15. Remove Duplicates from Sorted List](#Leetcode-Lesson-15) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -541,6 +542,36 @@ Constraints:
 ```java
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 15
+
+Remove Duplicates from Sorted List (Easy)
+-
+Given the `head` of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list **sorted** as well.
+
+Example 1:
+![Leetcode 15](src/main/resources/image/leetcode15.1.png)
+```java
+Input: head = [1,1,2]
+Output: [1,2]
+```
+
+Example 2:
+![Leetcode 15](src/main/resources/image/leetcode15.2.png)
+```java
+Input: head = [1,1,2,3,3]
+Output: [1,2,3]
+```
+
+Constraints:
+```java
+The number of nodes in the list is in the range [0, 300].
+-100 <= Node.val <= 100
+The list is guaranteed to be sorted in ascending order.
 ```
 
 [к оглавлению](#Tasks-from-leetcode)
