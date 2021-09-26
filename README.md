@@ -21,6 +21,11 @@
 + [Lesson 13. Length of Last Word](leetcode.md#Leetcode-Lesson-13)
 + [Lesson 14. Valid Parentheses](leetcode.md#Leetcode-Lesson-14)
 + [Lesson 15. Remove Duplicates from Sorted List](leetcode.md#Leetcode-Lesson-15)
++ [Lesson 16. Remove Element](leetcode.md#Leetcode-Lesson-16)
++ [Lesson 17. Base 7](leetcode.md#Leetcode-Lesson-17)
++ [Lesson 18. Single Number](leetcode.md#Leetcode-Lesson-18)
++ [Lesson 19. Majority Element](leetcode.md#Leetcode-Lesson-19)  
++ [Lesson 20. 1920.Build Array from Permutation](leetcode.md#Leetcode-Lesson-20) 
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 
@@ -39,6 +44,8 @@
 + [Lesson 14. Ролевая игра](acmp.md#ACMP-Lesson-14) 
 + [Lesson 15. Номера автобусов](acmp.md#ACMP-Lesson-15)
 
+## Tasks from codewars
++ [Lesson 1. Jaden Casing Strings](codewars.md#Сodewars-Lesson-1)
 
 ## Tasks from other sources
 + [Lesson 1. С помощью какой коллекции можно отсортировать массив ?](other.md#other-Lesson-1) 

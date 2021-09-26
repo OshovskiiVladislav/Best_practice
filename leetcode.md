@@ -15,7 +15,12 @@
 + [Lesson 13. Length of Last Word](#Leetcode-Lesson-13) ![icon][done]
 + [Lesson 14. Valid Parentheses](#Leetcode-Lesson-14) ![icon][done]
 + [Lesson 15. Remove Duplicates from Sorted List](#Leetcode-Lesson-15) ![icon][done]
++ [Lesson 16. Remove Element](#Leetcode-Lesson-16) ![icon][done]
++ [Lesson 17. Base 7](#Leetcode-Lesson-17) ![icon][done]
++ [Lesson 18. Single Number](#Leetcode-Lesson-18) ![icon][done]
++ [Lesson 19. Majority Element](#Leetcode-Lesson-19) ![icon][done]
 
++ [Lesson 20. 1920.Build Array from Permutation](#Leetcode-Lesson-20) ![icon][done]
 
 [Список разделов](README.md)
 
@@ -37,9 +42,9 @@ Input: s = "iloveleetcode", words = ["i","love","leetcode","apples"]
 Output: true
 Explanation:
 s can be made by concatenating "i", "love", and "leetcode" together.
-Example 2:
-```
+```       
 
+Example 2:
 ```java
 Input: s = "iloveleetcode", words = ["apples","i","love","leetcode"]
 Output: false
@@ -554,14 +559,15 @@ Remove Duplicates from Sorted List (Easy)
 Given the `head` of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list **sorted** as well.
 
 Example 1:
-![Leetcode 15](src/main/resources/image/leetcode15.1.png)
+![Leetcode 15.1](src/main/resources/image/leetcode15-1.png)
 ```java
 Input: head = [1,1,2]
 Output: [1,2]
 ```
 
 Example 2:
-![Leetcode 15](src/main/resources/image/leetcode15.2.png)
+![Leetcode 15.2
+](src/main/resources/image/leetcode15-2.png)
 ```java
 Input: head = [1,1,2,3,3]
 Output: [1,2,3]
@@ -573,5 +579,190 @@ The number of nodes in the list is in the range [0, 300].
 -100 <= Node.val <= 100
 The list is guaranteed to be sorted in ascending order.
 ```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+
+## Leetcode Lesson 16
+
+Remove Element (Easy)
+-
+Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` **in-place**. The relative order of the elements may be changed.</br>
+Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the **first part** of the array `nums`. More formally, if there are `k` elements after removing the duplicates, then the first `k` elements of `nums` should hold the final result. It does not matter what you leave beyond the first `k` elements.</br>
+Return `k` after placing the final result in the first `k` slots of `nums`.</br>
+
+Do **not** allocate extra space for another array. You must do this by **modifying the input array in-place** with O(1) extra memory.
+
+**Custom Judge:**
+
+The judge will test your solution with the following code:
+```java
+int[] nums = [...]; // Input array
+int val = ...; // Value to remove
+int[] expectedNums = [...]; // The expected answer with correct length.
+                            // It is sorted with no values equaling val.
+
+int k = removeElement(nums, val); // Calls your implementation
+
+assert k == expectedNums.length;
+sort(nums, 0, k); // Sort the first k elements of nums
+for (int i = 0; i < actualLength; i++) {
+    assert nums[i] == expectedNums[i];
+}
+```
+If all assertions pass, then your solution will be **accepted**.
+
+Example 1:
+```java
+Input: nums = [3,2,2,3], val = 3
+Output: 2, nums = [2,2,_,_]
+Explanation: Your function should return k = 2, with the first two elements of nums being 2.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+```
+Example 2:
+```java
+Input: nums = [0,1,2,2,3,0,4,2], val = 2
+Output: 5, nums = [0,1,4,0,3,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
+Note that the five elements can be returned in any order.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+```
+
+Constraints:
+```java
+0 <= nums.length <= 100
+0 <= nums[i] <= 50
+0 <= val <= 100
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 17
+
+Base 7 (Easy)
+-
+Given an integer `num`, return a string of its **base 7** representation.
+
+Example 1:
+```java
+Input: num = 100
+Output: "202"
+```
+Example 2:
+```java
+Input: num = -7
+Output: "-10"
+```
+
+Constraints:
+```java
+-107 <= num <= 107
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 18
+
+Single Number (Easy)
+-
+Given a **non-empty** array of integers `nums`, every element appears twice except for one. Find that single one.
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+Example 1:
+```java
+Input: nums = [2,2,1]
+Output: 1
+```
+Example 2:
+```java
+Input: nums = [4,1,2,1,2]
+Output: 4
+```
+Example 3:
+```java
+Input: nums = [1]
+Output: 1
+```
+
+Constraints:
+```java
+1 <= nums.length <= 3 * 104
+-3 * 104 <= nums[i] <= 3 * 104
+Each element in the array appears twice except for one element which appears only once.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 19
+
+Majority Element (Easy) 
+-
+Given an array `nums` of size `n`, return the majority element.
+The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element always exists in the array.
+
+
+
+Example 1:
+```java
+Input: nums = [3,2,3]
+Output: 3
+```
+
+Example 2:
+```java
+Input: nums = [2,2,1,1,1,2,2]
+Output: 2
+```
+
+Constraints:
+```java
+n == nums.length
+1 <= n <= 5 * 104
+-231 <= nums[i] <= 231 - 1
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 20
+
+1920.Build Array from Permutation
+-
+
+Given a **zero-based permutation** `nums` (**0-indexed**), build an array `ans` of the **same length** where `ans[i] = nums[nums[i]]` for each `0 <= i < nums.length` and return it.
+
+A **zero-based permutation** `nums` is an array of **distinct** integers from `0` to `nums.length - 1` (**inclusive**).
+
+Example 1:
+```java
+Input: nums = [0,2,1,5,3,4]
+Output: [0,1,2,4,5,3]
+Explanation: The array ans is built as follows:
+ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
+= [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
+= [0,1,2,4,5,3]
+```
+Example 2:
+```java
+Input: nums = [5,0,1,2,3,4]
+Output: [4,5,0,1,2,3]
+Explanation: The array ans is built as follows:
+ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
+= [nums[5], nums[0], nums[1], nums[2], nums[3], nums[4]]
+= [4,5,0,1,2,3]
+```
+
+Constraints:
+```java
+1 <= nums.length <= 1000
+0 <= nums[i] < nums.length
+The elements in nums are distinct.
+```
+
+Follow-up: Can you solve it without using an extra space (i.e., `O(1)` memory)?
 
 [к оглавлению](#Tasks-from-leetcode)
