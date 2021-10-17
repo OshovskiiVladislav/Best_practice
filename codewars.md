@@ -6,6 +6,8 @@
 
 [Список разделов](README.md)
 
+[done]:src/main/resources/image/done.png
+
 ## Сodewars Lesson 1
 
 Jaden Casing Strings (7 kyu)
@@ -22,4 +24,4 @@ Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 ```
 Note that the Java version expects a return value of null for an empty string or null.
 
-[к оглавлению](#Tasks-from-codewars)
+[к оглавлению](#Tasks-from-codewars) 

@@ -1,7 +1,8 @@
 # Задачи
 
 + [leetcode.com](#Tasks-from-leetcode) 
-+ [acmp.ru](#Tasks-from-acmp) 
++ [acmp.ru](#Tasks-from-acmp)
++ [codewars.com](#Tasks-from-codewars)
 + [Другие](#Tasks-from-other-sources)
 
 
@@ -26,6 +27,17 @@
 + [Lesson 18. Single Number](leetcode.md#Leetcode-Lesson-18)
 + [Lesson 19. Majority Element](leetcode.md#Leetcode-Lesson-19)  
 + [Lesson 20. 1920.Build Array from Permutation](leetcode.md#Leetcode-Lesson-20) 
++ [Lesson 21. Valid Sudoku](leetcode.md#Leetcode-Lesson-21) 
++ [Lesson 22. Split Linked List in Parts](leetcode.md#Leetcode-Lesson-22)
++ [Lesson 23. Keyboard Row](leetcode.md#Leetcode-Lesson-23) 
++ [Lesson 24. Fizz Buzz](leetcode.md#Leetcode-Lesson-24)
++ [Lesson 25. Day of the Week](leetcode.md#Leetcode-Lesson-25)
++ [Lesson 26. Check If N and Its Double Exist](leetcode.md#Leetcode-Lesson-26)
++ [Lesson 27. Roman to Integer](leetcode.md#Leetcode-Lesson-27)
++ [Lesson 28. Merge Two Sorted Lists](leetcode.md#Leetcode-Lesson-28)
++ [Lesson 29. Remove Duplicates from Sorted Array](leetcode.md#Leetcode-Lesson-29)
++ [Lesson 30. Implement strStr()](leetcode.md#Leetcode-Lesson-30)
+
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 
@@ -44,8 +56,11 @@
 + [Lesson 14. Ролевая игра](acmp.md#ACMP-Lesson-14) 
 + [Lesson 15. Номера автобусов](acmp.md#ACMP-Lesson-15)
 
+
+
 ## Tasks from codewars
 + [Lesson 1. Jaden Casing Strings](codewars.md#Сodewars-Lesson-1)
+
 
 ## Tasks from other sources
 + [Lesson 1. С помощью какой коллекции можно отсортировать массив ?](other.md#other-Lesson-1) 

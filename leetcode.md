@@ -19,8 +19,17 @@
 + [Lesson 17. Base 7](#Leetcode-Lesson-17) ![icon][done]
 + [Lesson 18. Single Number](#Leetcode-Lesson-18) ![icon][done]
 + [Lesson 19. Majority Element](#Leetcode-Lesson-19) ![icon][done]
-
 + [Lesson 20. 1920.Build Array from Permutation](#Leetcode-Lesson-20) ![icon][done]
++ [Lesson 21. Valid Sudoku](#Leetcode-Lesson-21) ![icon][done]
++ [Lesson 22. Split Linked List in Parts](#Leetcode-Lesson-22) ![icon][done]
++ [Lesson 23. Keyboard Row](#Leetcode-Lesson-23) ![icon][done]
++ [Lesson 24. Fizz Buzz](#Leetcode-Lesson-24) ![icon][done]
++ [Lesson 25. Day of the Week](#Leetcode-Lesson-25) ![icon][done]
++ [Lesson 26. Check If N and Its Double Exist](#Leetcode-Lesson-26) ![icon][done]
++ [Lesson 27. Roman to Integer](#Leetcode-Lesson-27) ![icon][done]
++ [Lesson 28. Merge Two Sorted Lists](#Leetcode-Lesson-28) ![icon][done]
++ [Lesson 29. Remove Duplicates from Sorted Array](#Leetcode-Lesson-29) ![icon][done]
++ [Lesson 30. Implement strStr()](#Leetcode-Lesson-30) ![icon][done]
 
 [Список разделов](README.md)
 
@@ -556,9 +565,11 @@ s consists of parentheses only '()[]{}'.
 
 Remove Duplicates from Sorted List (Easy)
 -
-Given the `head` of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list **sorted** as well.
+Given the `head` of a sorted linked list, delete all duplicates such that each element appears only once. 
+Return the linked list **sorted** as well.
 
 Example 1:
+
 ![Leetcode 15.1](src/main/resources/image/leetcode15-1.png)
 ```java
 Input: head = [1,1,2]
@@ -566,8 +577,8 @@ Output: [1,2]
 ```
 
 Example 2:
-![Leetcode 15.2
-](src/main/resources/image/leetcode15-2.png)
+
+![Leetcode 15.2](src/main/resources/image/leetcode15-2.png)
 ```java
 Input: head = [1,1,2,3,3]
 Output: [1,2,3]
@@ -764,5 +775,444 @@ The elements in nums are distinct.
 ```
 
 Follow-up: Can you solve it without using an extra space (i.e., `O(1)` memory)?
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 21
+
+Valid Sudoku (Medium)
+-
+Determine if a `9 x 9` Sudoku board is valid. Only the filled cells need to be validated **according to the following rules**:
+
+1. Each row must contain the digits `1-9` without repetition.
+2. Each column must contain the digits `1-9` without repetition.
+3. Each of the nine `3 x 3` sub-boxes of the grid must contain the digits `1-9` without repetition.
+Note:
+
+A Sudoku board (partially filled) could be valid but is not necessarily solvable.
+Only the filled cells need to be validated according to the mentioned rules.
+
+
+Example 1:
+
+![Valid Sudoku](src/main/resources/image/validSudokuLeetcode21.png)
+
+```java
+Input: board =
+[["5","3",".",".","7",".",".",".","."]
+,["6",".",".","1","9","5",".",".","."]
+,[".","9","8",".",".",".",".","6","."]
+,["8",".",".",".","6",".",".",".","3"]
+,["4",".",".","8",".","3",".",".","1"]
+,["7",".",".",".","2",".",".",".","6"]
+,[".","6",".",".",".",".","2","8","."]
+,[".",".",".","4","1","9",".",".","5"]
+,[".",".",".",".","8",".",".","7","9"]]
+Output: true
+```
+
+Example 2:
+```java
+Input: board =
+[["8","3",".",".","7",".",".",".","."]
+,["6",".",".","1","9","5",".",".","."]
+,[".","9","8",".",".",".",".","6","."]
+,["8",".",".",".","6",".",".",".","3"]
+,["4",".",".","8",".","3",".",".","1"]
+,["7",".",".",".","2",".",".",".","6"]
+,[".","6",".",".",".",".","2","8","."]
+,[".",".",".","4","1","9",".",".","5"]
+,[".",".",".",".","8",".",".","7","9"]]
+Output: false
+```
+Explanation: Same as Example 1, except with the 5 in the top left corner being modified to 8. Since there are two 8's in the top left 3x3 sub-box, it is invalid.
+
+
+Constraints:
+```java
+board.length == 9
+board[i].length == 9
+board[i][j] is a digit 1-9 or '.'.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 22
+
+Split Linked List in Parts (Medium)
+-
+Given the `head` of a singly linked list and an integer `k`, split the linked list into `k` consecutive linked list parts.
+The length of each part should be as equal as possible: no two parts should have a size differing by more than one. This may lead to some parts being null.
+The parts should be in the order of occurrence in the input list, and parts occurring earlier should always have a size greater than or equal to parts occurring later.
+Return an array of the `k` parts.
+
+Example 1:
+![Split Linked List in Parts 1](src/main/resources/image/leetcode22.1.png)
+
+```java
+Input: head = [1,2,3], k = 5
+Output: [[1],[2],[3],[],[]]
+Explanation:
+The first element output[0] has output[0].val = 1, output[0].next = null.
+The last element output[4] is null, but its string representation as a ListNode is [].
+```
+
+Example 2:
+
+![Split Linked List in Parts 2](src/main/resources/image/leetcode22.2.png)
+
+```java
+Input: head = [1,2,3,4,5,6,7,8,9,10], k = 3
+Output: [[1,2,3,4],[5,6,7],[8,9,10]]
+Explanation:
+The input has been split into consecutive parts with size difference at most 1, and earlier parts are a larger size than the later parts.
+```
+
+Constraints:
+```java
+The number of nodes in the list is in the range [0, 1000].
+0 <= Node.val <= 1000
+1 <= k <= 50
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 23
+
+Keyboard Row (Easy)
+-
+Given an array of strings `words`, return the words that can be typed using letters of the alphabet on only one row of American keyboard like the image below.
+
+In the **American keyboard**:
+
+- the first row consists of the characters `"qwertyuiop"`,
+- the second row consists of the characters `"asdfghjkl"`, and
+- the third row consists of the characters `"zxcvbnm"`.
+
+![Keyboard](src/main/resources/image/leetcode23.png)
+
+Example 1:
+```java
+Input: words = ["Hello","Alaska","Dad","Peace"]
+Output: ["Alaska","Dad"]
+```
+Example 2:
+```java
+Input: words = ["omk"]
+Output: []
+```
+Example 3:
+```java
+Input: words = ["adsdf","sfd"]
+Output: ["adsdf","sfd"]
+```
+
+Constraints:
+```java
+1 <= words.length <= 20
+1 <= words[i].length <= 100
+words[i] consists of English letters (both lowercase and uppercase).
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+
+## Leetcode Lesson 24
+
+Fizz Buzz (Easy)
+-
+Given an integer n, return a string array answer (1-indexed) where:
+
+- answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+- answer[i] == "Fizz" if i is divisible by 3.
+- answer[i] == "Buzz" if i is divisible by 5.
+- answer[i] == i if non of the above conditions are true.
+
+Example 1:
+```java
+Input: n = 3
+Output: ["1","2","Fizz"]
+```
+Example 2:
+```java
+Input: n = 5
+Output: ["1","2","Fizz","4","Buzz"]
+```
+Example 3:
+```java
+Input: n = 15
+Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
+```
+
+Constraints:
+```java
+1 <= n <= 104
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 25
+
+Day of the Week (Easy)
+-
+Given a date, return the corresponding day of the week for that date.
+The input is given as three integers representing the day, month and year respectively.
+Return the answer as one of the following values {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}.
+
+Example 1:
+```java
+Input: day = 31, month = 8, year = 2019
+Output: "Saturday"
+```
+Example 2:
+```java
+Input: day = 18, month = 7, year = 1999
+Output: "Sunday"
+```
+Example 3:
+```java
+Input: day = 15, month = 8, year = 1993
+Output: "Sunday"
+```
+
+Constraints:
+```java
+The given dates are valid dates between the years 1971 and 2100.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+
+
+
+
+## Leetcode Lesson 26
+
+Check If N and Its Double Exist (Easy)
+-
+Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 * M).
+More formally check if there exists two indices i and j such that :
+```java
+i != j
+0 <= i, j < arr.length
+arr[i] == 2 * arr[j]
+```
+
+Example 1:
+```java
+Input: arr = [10,2,5,3]
+Output: true
+Explanation: N = 10 is the double of M = 5,that is, 10 = 2 * 5.
+```
+Example 2:
+```java
+Input: arr = [7,1,14,11]
+Output: true
+Explanation: N = 14 is the double of M = 7,that is, 14 = 2 * 7.
+```
+Example 3:
+```java
+Input: arr = [3,1,7,11]
+Output: false
+Explanation: In this case does not exist N and M, such that N = 2 * M.
+```
+
+Constraints:
+```java
+2 <= arr.length <= 500
+-10^3 <= arr[i] <= 10^3
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 27
+
+Roman to Integer (Easy)
+-
+Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+```
+Symbol       Value
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+```
+For example, 2 is written as II in Roman numeral, just two one's added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
+Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+
+- `I` can be placed before `V` (5) and `X` (10) to make 4 and 9.
+- `X` can be placed before `L` (50) and `C` (100) to make 40 and 90.
+- `C` can be placed before `D` (500) and `M` (1000) to make 400 and 900.
+Given a roman numeral, convert it to an integer.
+
+
+
+Example 1:
+```java
+Input: s = "III"
+Output: 3
+```
+Example 2:
+```java
+Input: s = "IV"
+Output: 4
+```
+Example 3:
+```java
+Input: s = "IX"
+Output: 9
+```
+Example 4:
+```java
+Input: s = "LVIII"
+Output: 58
+Explanation: L = 50, V= 5, III = 3.
+```
+Example 5:
+```java
+Input: s = "MCMXCIV"
+Output: 1994
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+```
+
+Constraints:
+```java
+1 <= s.length <= 15
+s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
+It is guaranteed that s is a valid roman numeral in the range [1, 3999].
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+
+## Leetcode Lesson 28
+
+Merge Two Sorted Lists (Easy)
+-
+Merge two sorted linked lists and return it as a **sorted** list. The list should be made by splicing together the nodes of the first two lists.
+
+Example 1:
+
+![Leetcode 28](src/main/resources/image/leetcode28.png)
+
+```java
+Input: l1 = [1,2,4], l2 = [1,3,4]
+Output: [1,1,2,3,4,4]
+```
+Example 2:
+```java
+Input: l1 = [], l2 = []
+Output: []
+```
+Example 3:
+```java
+Input: l1 = [], l2 = [0]
+Output: [0]
+```
+
+Constraints:
+```java
+The number of nodes in both lists is in the range [0, 50].
+-100 <= Node.val <= 100
+Both l1 and l2 are sorted in non-decreasing order.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 29
+
+Remove Duplicates from Sorted Array (Easy)
+-
+Given an integer array `nums` sorted in **non-decreasing order**, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
+Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
+Return k after placing the final result in the first k slots of nums.
+Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
+
+Custom Judge:
+
+The judge will test your solution with the following code:
+```java
+int[] nums = [...]; // Input array
+int[] expectedNums = [...]; // The expected answer with correct length
+
+int k = removeDuplicates(nums); // Calls your implementation
+
+assert k == expectedNums.length;
+for (int i = 0; i < k; i++) {
+assert nums[i] == expectedNums[i];
+}
+```
+
+If all assertions pass, then your solution will be accepted.
+
+
+
+Example 1:
+```java
+Input: nums = [1,1,2]
+Output: 2, nums = [1,2,_]
+Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+```
+Example 2:
+```java
+Input: nums = [0,0,1,1,1,2,2,3,3,4]
+Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+```
+
+Constraints:
+```java
+0 <= nums.length <= 3 * 104
+-100 <= nums[i] <= 100
+nums is sorted in non-decreasing order.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 30
+
+Implement strStr() (Easy)
+-
+Implement strStr().
+
+Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+**Clarification:**
+
+What should we return when needle is an empty string? This is a great question to ask during an interview.
+For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().
+
+Example 1:
+```java
+Input: haystack = "hello", needle = "ll"
+Output: 2
+```
+Example 2:
+```java
+Input: haystack = "aaaaa", needle = "bba"
+Output: -1
+```
+Example 3:
+```java
+Input: haystack = "", needle = ""
+Output: 0
+```
+
+Constraints:
+```java
+0 <= haystack.length, needle.length <= 5 * 104
+haystack and needle consist of only lower-case English characters.
+```
 
 [к оглавлению](#Tasks-from-leetcode)
