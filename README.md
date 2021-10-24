@@ -37,6 +37,8 @@
 + [Lesson 28. Merge Two Sorted Lists](leetcode.md#Leetcode-Lesson-28)
 + [Lesson 29. Remove Duplicates from Sorted Array](leetcode.md#Leetcode-Lesson-29)
 + [Lesson 30. Implement strStr()](leetcode.md#Leetcode-Lesson-30)
++ [Lesson 31. Maximum Subarray](leetcode.md#Leetcode-Lesson-31) 
++ [Lesson 32. Climbing Stairs](leetcode.md#Leetcode-Lesson-32) 
 
 
 ## Tasks from acmp

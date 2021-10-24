@@ -30,6 +30,8 @@
 + [Lesson 28. Merge Two Sorted Lists](#Leetcode-Lesson-28) ![icon][done]
 + [Lesson 29. Remove Duplicates from Sorted Array](#Leetcode-Lesson-29) ![icon][done]
 + [Lesson 30. Implement strStr()](#Leetcode-Lesson-30) ![icon][done]
++ [Lesson 31. Maximum Subarray](#Leetcode-Lesson-31) ![icon][done]
++ [Lesson 31. Climbing Stairs](#Leetcode-Lesson-32) ![icon][done]
 
 [Список разделов](README.md)
 
@@ -112,9 +114,8 @@ Plus One (Medium)
 -
 
 Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer.
-
-The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit.
-
+The digits are stored such that the most significant digit is at the head of the list, and each element 
+in the array contains a single digit.
 You may assume the integer does not contain any leading zero, except the number 0 itself.
 
 Example 1:
@@ -741,7 +742,7 @@ n == nums.length
 
 ## Leetcode Lesson 20
 
-1920.Build Array from Permutation
+1920.Build Array from Permutation (Easy)
 -
 
 Given a **zero-based permutation** `nums` (**0-indexed**), build an array `ans` of the **same length** where `ans[i] = nums[nums[i]]` for each `0 <= i < nums.length` and return it.
@@ -987,9 +988,6 @@ The given dates are valid dates between the years 1971 and 2100.
 
 
 
-
-
-
 ## Leetcode Lesson 26
 
 Check If N and Its Double Exist (Easy)
@@ -1213,6 +1211,107 @@ Constraints:
 ```java
 0 <= haystack.length, needle.length <= 5 * 104
 haystack and needle consist of only lower-case English characters.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 31
+
+Maximum Subarray (Easy)
+-
+Given an integer array `nums`, find the contiguous subarray (containing at least one number) which has the largest sum 
+and return its sum.</br>
+A **subarray** is a **contiguous** part of an array.
+
+Example 1:
+```java
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+Output: 6
+Explanation: [4,-1,2,1] has the largest sum = 6.
+```
+Example 2:
+```java
+Input: nums = [1]
+Output: 1
+```
+Example 3:
+```java
+Input: nums = [5,4,-1,7,8]
+Output: 23
+```
+
+Constraints:
+```java
+1 <= nums.length <= 105
+-104 <= nums[i] <= 104
+```
+
+**Follow up:** If you have figured out the `O(n)` solution, try coding another solution using the **divide and conquer** 
+approach, which is more subtle.
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 31
+
+Sqrt(x) (Easy)
+-
+
+Given a non-negative integer `x`, compute and return the square root of `x`.</br>
+Since the return type is an integer, the decimal digits are **truncated**, and only **the integer part** of the result 
+is returned.</br>
+**Note:** You are not allowed to use any built-in exponent function or operator, such as `pow(x, 0.5)` or `x ** 0.5`.
+
+Example 1:
+```java
+Input: x = 4
+Output: 2
+```
+Example 2:
+```java
+Input: x = 8
+Output: 2
+Explanation: The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned.
+```
+
+Constraints:
+```java
+0 <= x <= 231 - 1
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 32
+
+Climbing Stairs (Easy)
+-
+You are climbing a staircase. It takes `n` steps to reach the top.
+
+Each time you can either climb `1` or `2` steps. In how many distinct ways can you climb to the top?
+
+
+
+Example 1:
+```java
+Input: n = 2
+Output: 2
+Explanation: There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
+```
+Example 2:
+```java
+Input: n = 3
+Output: 3
+Explanation: There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step
+```
+
+Constraints:
+```java
+1 <= n <= 45
 ```
 
 [к оглавлению](#Tasks-from-leetcode)

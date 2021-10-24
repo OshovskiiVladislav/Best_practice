@@ -1,5 +1,6 @@
 package com.oshovskii.practice.leetcode.lesson3;
 
+import com.oshovskii.practice.leetcode.medium.lesson3.Solution;
 import org.junit.Assert;
 import org.junit.Test;
 
