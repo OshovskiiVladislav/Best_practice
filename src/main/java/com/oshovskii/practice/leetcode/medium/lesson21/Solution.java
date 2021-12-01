@@ -11,8 +11,8 @@ class Solution {
                 char current = board[i][j];
                 if (current != '.') {
                     if (!hashSet.add(current + " found in row " + i) ||
-                        !hashSet.add(current + " found in column " + j) ||
-                        !hashSet.add(current + " found in sub box " + i/3 + "-" + j/3)) {
+                            !hashSet.add(current + " found in column " + j) ||
+                            !hashSet.add(current + " found in sub box " + i / 3 + "-" + j / 3)) {
                         return false;
                     }
                 }

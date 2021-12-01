@@ -5,16 +5,16 @@ public class Solution {
     public int maxSubArrayKadaneAlgorithm(int[] nums) {
         int maximum = nums[0];
         for (int i = 1; i < nums.length; i++) {
-            if(nums[i] < nums[i] + nums[i - 1])
+            if (nums[i] < nums[i] + nums[i - 1])
                 nums[i] = nums[i] + nums[i - 1];
-            if(maximum < nums[i])
+            if (maximum < nums[i])
                 maximum = nums[i];
         }
         return maximum;
     }
 
     /**
-        Tect Time Limit Exceeded
+     * Tect Time Limit Exceeded
      */
     public int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE;

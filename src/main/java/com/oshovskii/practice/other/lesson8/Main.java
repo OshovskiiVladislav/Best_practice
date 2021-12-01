@@ -6,7 +6,7 @@ import java.util.Deque;
 
 public class Main {
     public static void main(String[] args) {
-        int[] array = new int[]{1,3,5,7,9};
+        int[] array = new int[]{1, 3, 5, 7, 9};
         System.out.println(Arrays.toString(array));
         revert(array);
         System.out.println(Arrays.toString(array));

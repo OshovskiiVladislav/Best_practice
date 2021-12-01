@@ -8,9 +8,9 @@ package com.oshovskii.practice.other.lesson10;
  * то скатываетесь к Integer.MIN_VALUE, то есть, к минимальному значению Integer.
  * Таким образом, для решения этой Java-задачи нам достаточно присвоить переменной start значение на 1 меньшее,
  * чем максимальное для типа данных int.
-
+ * <p>
  * Код задачи на Java:
-*/
+ */
 
 class ToInfinity {
     public static void main(String[] args) {

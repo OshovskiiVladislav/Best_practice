@@ -37,9 +37,16 @@
 + [Lesson 28. Merge Two Sorted Lists](leetcode.md#Leetcode-Lesson-28)
 + [Lesson 29. Remove Duplicates from Sorted Array](leetcode.md#Leetcode-Lesson-29)
 + [Lesson 30. Implement strStr()](leetcode.md#Leetcode-Lesson-30)
-+ [Lesson 31. Maximum Subarray](leetcode.md#Leetcode-Lesson-31) 
-+ [Lesson 32. Climbing Stairs](leetcode.md#Leetcode-Lesson-32) 
-
++ [Lesson 31. Maximum Subarray](leetcode.md#Leetcode-Lesson-31)
++ [Lesson 32. Sqrt(x)](leetcode.md#Leetcode-Lesson-32) 
++ [Lesson 33. Climbing Stairs](leetcode.md#Leetcode-Lesson-33) 
++ [Lesson 34. Merge Sorted Array](leetcode.md#Leetcode-Lesson-34) 
++ [Lesson 35. Binary Tree Inorder Traversal](leetcode.md#Leetcode-Lesson-35) 
++ [Lesson 36. Pascal's Triangle](leetcode.md#Leetcode-Lesson-36)
++ [Lesson 37. Delete Node in a Linked List](leetcode.md#Leetcode-Lesson-37)
++ [Lesson 38. Best Time to Buy and Sell Stock](leetcode.md#Leetcode-Lesson-38) 
++ [Lesson 39. Valid Palindrome](leetcode.md#Leetcode-Lesson-39)
++ [Lesson 40. Missing Number](leetcode.md#Leetcode-Lesson-40)
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 
@@ -78,3 +85,4 @@
 + [Lesson 11. Cоздать именованный цикл](other.md#other-Lesson-11) 
 + [Lesson 12. Вычисление квадратного корня без библиотечных методов](other.md#other-Lesson-12) 
 + [Lesson 13. Развернуть строку](other.md#other-Lesson-13) 
++ [Lesson 14. Вычисление арифметического выражения из строки методом рекурсивного спуска](other.md#other-Lesson-14)

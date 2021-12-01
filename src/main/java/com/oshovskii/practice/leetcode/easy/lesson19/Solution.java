@@ -17,8 +17,8 @@ public class Solution {
             if (nums[i] == nums[i + 1]) {
                 count++;
                 if (count >= countTwo) {
-                   majorityElement = nums[i];
-                   countTwo = count;
+                    majorityElement = nums[i];
+                    countTwo = count;
                 }
             } else {
                 count = 0;
@@ -31,7 +31,7 @@ public class Solution {
         Map<Integer, Integer> hashMap = new HashMap<>();
         int majorityElement = 0;
         int result = 0;
-        for (int i = 0; i < nums.length ; i++) {
+        for (int i = 0; i < nums.length; i++) {
             if (!hashMap.containsKey(nums[i])) {
                 hashMap.put(nums[i], 1);
             } else {

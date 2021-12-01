@@ -4,6 +4,7 @@ public class Solution {
     public static void main(String[] args) {
         System.out.println(mySqrt(6));
     }
+
     public static int mySqrt(int x) {
         long result = 0;
 
@@ -23,7 +24,7 @@ public class Solution {
             if (mid <= x / mid) {
                 start = mid + 1;
                 res = mid;
-            } else{
+            } else {
                 end = mid - 1;
             }
         }

@@ -11,7 +11,7 @@ public class Solution {
         }
 
         if (k == 1) {
-            return new ListNode[] {head};
+            return new ListNode[]{head};
         }
 
         while (head.next != null) {

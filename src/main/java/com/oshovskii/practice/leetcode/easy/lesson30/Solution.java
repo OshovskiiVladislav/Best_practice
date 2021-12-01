@@ -9,24 +9,24 @@ public class Solution {
     }
 
     public int strString(String haystack, String needle) {
-        if(needle.equals("")){
+        if (needle.equals("")) {
             return 0;
         }
-        if(needle.length()>haystack.length())
+        if (needle.length() > haystack.length())
             return -1;
 
         int nSize = needle.length();
         int hSize = haystack.length();
 
-        for(int i = 0; i < hSize-nSize; i++) {
+        for (int i = 0; i < hSize - nSize; i++) {
 
-            if(haystack.substring(i, i + nSize).equals(needle)) {
+            if (haystack.substring(i, i + nSize).equals(needle)) {
                 return i;
             }
         }
 
-        if(haystack.substring(hSize-nSize).equals(needle)) {
-            return hSize-nSize;
+        if (haystack.substring(hSize - nSize).equals(needle)) {
+            return hSize - nSize;
         }
 
         return -1;

@@ -40,7 +40,7 @@ class Solution {
         String secondRow = "asdfghjkl";
         String thirdRow = "zxcvbnm";
         String res = "";
-        for(String i : words) {
+        for (String i : words) {
             int first = 0, second = 0, third = 0;
             for (char ch : i.toCharArray()) {
                 if (firstRow.contains(String.valueOf(ch).toLowerCase())) {

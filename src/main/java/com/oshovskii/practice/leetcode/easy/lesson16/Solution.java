@@ -3,7 +3,7 @@ package com.oshovskii.practice.leetcode.easy.lesson16;
 public class Solution {
     public int removeElement(int[] nums, int val) {
         int count = 0;
-        for (int i = nums.length - 1; i >= 0 ; i--) {
+        for (int i = nums.length - 1; i >= 0; i--) {
             if (nums[i] == val) {
                 moveElements(nums, i);
                 count++;
@@ -12,7 +12,7 @@ public class Solution {
         return nums.length - count;
     }
 
-    private void moveElements(int[] nums, int position){
+    private void moveElements(int[] nums, int position) {
         for (int i = position; i < nums.length; i++) {
             nums[i] = nums[i + 1];
             nums[i + 1] = 0;

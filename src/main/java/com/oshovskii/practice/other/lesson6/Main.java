@@ -15,10 +15,10 @@ public class Main {
         }
 
         for (Integer e1 : input) {
-            if(map.containsKey(e1)) {
-              map.put(e1, map.get(e1) + 1);
+            if (map.containsKey(e1)) {
+                map.put(e1, map.get(e1) + 1);
             } else {
-                map.put(e1,1);
+                map.put(e1, 1);
             }
         }
         return map;

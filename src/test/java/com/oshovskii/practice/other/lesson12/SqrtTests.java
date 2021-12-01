@@ -8,7 +8,7 @@ public class SqrtTests {
     @Test
     public void basicTests() {
         assertEquals(3, Sqrt.calculateSqrt(9));
-        assertEquals(2,Sqrt.calculateSqrt(4) );
-        assertEquals(2,Sqrt.calculateSqrt(5));
+        assertEquals(2, Sqrt.calculateSqrt(4));
+        assertEquals(2, Sqrt.calculateSqrt(5));
     }
 }

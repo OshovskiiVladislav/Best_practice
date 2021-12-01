@@ -4,6 +4,7 @@ public class Solution {
     public static void main(String[] args) {
         System.out.println(convertToBase7(-54));
     }
+
     public static String convertToBase7(int num) {
         StringBuilder stringBuilder = new StringBuilder();
         String sign = "";

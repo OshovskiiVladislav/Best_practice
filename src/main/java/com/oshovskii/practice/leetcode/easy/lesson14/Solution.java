@@ -15,9 +15,9 @@ public class Solution {
         }
 
         Map<Character, Character> brackets = new HashMap<>();
-        brackets.put(')','(');
-        brackets.put('}','{');
-        brackets.put(']','[');
+        brackets.put(')', '(');
+        brackets.put('}', '{');
+        brackets.put(']', '[');
 
         Stack<Character> stack = new Stack<>();
 

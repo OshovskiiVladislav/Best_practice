@@ -7,12 +7,13 @@ public class Solution {
         System.out.println(groupAnagrams(new String[]{"abc", "abc", "cba", "was", "dsda"}));
         System.out.println(groupAnagrams2(new String[]{"abc", "abc", "cba", "was", "dsda"}));
     }
+
     public static List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String[], List<String>> hashMap = new HashMap<>();
         for (int i = 0; i < strs.length; i++) {
             Boolean flag = false;
             String[] arrWord = Arrays.stream(strs[i].split("")).sorted(Comparator.naturalOrder()).toArray(String[]::new);
-            for (String[] arr: hashMap.keySet()) {
+            for (String[] arr : hashMap.keySet()) {
                 if (Arrays.equals(arr, arrWord)) {
                     hashMap.get(arr).add(strs[i]);
                     flag = true;
@@ -30,8 +31,9 @@ public class Solution {
         }
         return resultSuperList;
     }
+
     /**
-    26 - это количестово английских букв
+     * 26 - это количестово английских букв
      */
     public static List<List<String>> groupAnagrams2(String[] strs) {
         if (strs.length == 0) return new ArrayList();

@@ -6,7 +6,8 @@ import java.util.Map;
 public class Solution {
     /**
      * O(n2) time complexity
-     * @param nums - array of integers
+     *
+     * @param nums   - array of integers
      * @param target - integer number
      * @return int[]
      */
@@ -14,7 +15,7 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i; j < nums.length; j++) {
                 if (nums[j] == target - nums[i]) {
-                    return new int[] {i, j};
+                    return new int[]{i, j};
                 }
             }
         }
@@ -23,7 +24,8 @@ public class Solution {
 
     /**
      * O(N) time complexity
-     * @param nums - array of integers
+     *
+     * @param nums   - array of integers
      * @param target - integer number
      * @return int[]
      */
@@ -35,7 +37,7 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             int requiredNumber = target - nums[i];
             if (map.containsKey(requiredNumber) && map.get(requiredNumber) != i) {
-                return new int[] {i, map.get(requiredNumber)};
+                return new int[]{i, map.get(requiredNumber)};
             }
         }
         throw new IllegalArgumentException("No solution for  defined input data!");
@@ -43,7 +45,8 @@ public class Solution {
 
     /**
      * It's at least two times faster than other.
-     * @param nums - array of integers
+     *
+     * @param nums   - array of integers
      * @param target - integer number
      * @return int[]
      */

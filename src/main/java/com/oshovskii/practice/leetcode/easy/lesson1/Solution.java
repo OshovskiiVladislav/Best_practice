@@ -4,7 +4,7 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        System.out.println(isPrefixString("iloveleetcode", new String[]{"i","love","leetcode","apples"}));
+        System.out.println(isPrefixString("iloveleetcode", new String[]{"i", "love", "leetcode", "apples"}));
     }
 
     public static boolean isPrefixString(String s, String[] words) {

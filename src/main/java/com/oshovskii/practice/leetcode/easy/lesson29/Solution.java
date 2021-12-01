@@ -1,7 +1,6 @@
 package com.oshovskii.practice.leetcode.easy.lesson29;
 
 
-
 public class Solution {
     public int removeDuplicates(int[] nums) {
         int count = 0;

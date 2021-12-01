@@ -31,7 +31,15 @@
 + [Lesson 29. Remove Duplicates from Sorted Array](#Leetcode-Lesson-29) ![icon][done]
 + [Lesson 30. Implement strStr()](#Leetcode-Lesson-30) ![icon][done]
 + [Lesson 31. Maximum Subarray](#Leetcode-Lesson-31) ![icon][done]
-+ [Lesson 31. Climbing Stairs](#Leetcode-Lesson-32) ![icon][done]
++ [Lesson 32. Sqrt(x)](#Leetcode-Lesson-32) ![icon][done]
++ [Lesson 33. Climbing Stairs](#Leetcode-Lesson-33) ![icon][done]
++ [Lesson 34. Merge Sorted Array](#Leetcode-Lesson-34) ![icon][done]
++ [Lesson 35. Binary Tree Inorder Traversal](#Leetcode-Lesson-35) ![icon][done]
++ [Lesson 36. Pascal's Triangle](#Leetcode-Lesson-36) ![icon][done]
++ [Lesson 37. Delete Node in a Linked List](#Leetcode-Lesson-37) ![icon][done]
++ [Lesson 38. Best Time to Buy and Sell Stock](#Leetcode-Lesson-38) ![icon][done]
++ [Lesson 39. Valid Palindrome](#Leetcode-Lesson-39) ![icon][done]
++ [Lesson 40. Missing Number](#Leetcode-Lesson-40) ![icon][done]
 
 [Список разделов](README.md)
 
@@ -1251,7 +1259,7 @@ approach, which is more subtle.
 
 [к оглавлению](#Tasks-from-leetcode)
 
-## Leetcode Lesson 31
+## Leetcode Lesson 32
 
 Sqrt(x) (Easy)
 -
@@ -1281,12 +1289,11 @@ Constraints:
 [к оглавлению](#Tasks-from-leetcode)
 
 
-## Leetcode Lesson 32
+## Leetcode Lesson 33
 
 Climbing Stairs (Easy)
 -
 You are climbing a staircase. It takes `n` steps to reach the top.
-
 Each time you can either climb `1` or `2` steps. In how many distinct ways can you climb to the top?
 
 
@@ -1313,5 +1320,300 @@ Constraints:
 ```java
 1 <= n <= 45
 ```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 34
+
+Merge Sorted Array (Easy)
+-
+You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n,
+representing the number of elements in nums1 and nums2 respectively.
+Merge nums1 and nums2 into a single array sorted in non-decreasing order.
+The final sorted array should not be returned by the function, but instead be stored inside the array nums1. 
+To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged,
+and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
+
+Example 1:
+```java
+Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+Output: [1,2,2,3,5,6]
+Explanation: The arrays we are merging are [1,2,3] and [2,5,6].
+The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
+```
+Example 2:
+```java
+Input: nums1 = [1], m = 1, nums2 = [], n = 0
+Output: [1]
+Explanation: The arrays we are merging are [1] and [].
+The result of the merge is [1].
+```
+Example 3:
+```java
+Input: nums1 = [0], m = 0, nums2 = [1], n = 1
+Output: [1]
+Explanation: The arrays we are merging are [] and [1].
+The result of the merge is [1].
+Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
+```
+
+Constraints:
+```java
+nums1.length == m + n
+nums2.length == n
+0 <= m, n <= 200
+1 <= m + n <= 200
+-109 <= nums1[i], nums2[j] <= 109
+```
+
+**Follow up:** Can you come up with an algorithm that runs in O(m + n) time?
+
+
+
+
+## Leetcode Lesson 35
+
+Binary Tree Inorder Traversal (Easy)
+-
+Given the `root` of a binary tree, return the inorder traversal of its nodes' values.
+
+Example 1:
+![leetcode 35.1](src/main/resources/image/leetcode35.png)
+
+```java
+Input: root = [1,null,2,3]
+Output: [1,3,2]
+```
+Example 2:
+```java
+Input: root = []
+Output: []
+```
+Example 3:
+```java
+Input: root = [1]
+Output: [1]
+```
+Example 4:
+![leetcode 35.2](src/main/resources/image/leetcode35.2.png)
+```java
+Input: root = [1,2]
+Output: [2,1]
+```
+Example 5:
+![leetcode 35.3](src/main/resources/image/leetcode35.3.png)
+```java
+Input: root = [1,null,2]
+Output: [1,2]
+```
+
+Constraints:
+```java
+The number of nodes in the tree is in the range [0, 100].
+-100 <= Node.val <= 100
+```
+
+**Follow up:** Recursive solution is trivial, could you do it iteratively?
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 36
+
+Pascal's Triangle (Easy)
+-
+Given an integer numRows, return the first numRows of Pascal's triangle.
+In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
+
+![leetcode 36](src/main/resources/image/leetcode36.png)
+
+Example 1:
+```java
+Input: numRows = 5
+Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+```
+Example 2:
+```java
+Input: numRows = 1
+Output: [[1]]
+```
+
+Constraints:
+```java
+1 <= numRows <= 30
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 37
+
+Delete Node in a Linked List (Easy)
+-
+Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, 
+instead you will be given access to the node to be deleted directly.
+It is guaranteed that the node to be deleted is not a tail node in the list.
+
+Example 1:
+![leetcode 37](src/main/resources/image/leetcode37.1.png)
+```java
+Input: head = [4,5,1,9], node = 5
+Output: [4,1,9]
+Explanation: You are given the second node with value 5, 
+the linked list should become 4 -> 1 -> 9 after calling your function.
+```
+
+Example 2:
+![leetcode 37](src/main/resources/image/leetcode37.2.png)
+```java
+Input: head = [4,5,1,9], node = 1
+Output: [4,5,9]
+Explanation: You are given the third node with value 1, the linked list should become 4 -> 5 -> 9 after calling your function.
+```
+Example 3:
+```java
+Input: head = [1,2,3,4], node = 3
+Output: [1,2,4]
+```
+Example 4:
+```java
+Input: head = [0,1], node = 0
+Output: [1]
+```
+Example 5:
+```java
+Input: head = [-3,5,-99], node = -3
+Output: [5,-99]
+```
+Constraints:
+```java
+The number of the nodes in the given list is in the range [2, 1000].
+-1000 <= Node.val <= 1000
+The value of each node in the list is unique.
+The node to be deleted is in the list and is not a tail node
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 38
+
+Best Time to Buy and Sell Stock (Easy)
+-
+You are given an array prices where prices[i] is the price of a given stock on the ith day.
+
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+
+Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+
+
+Example 1:
+```java
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+```
+Example 2:
+```java
+Input: prices = [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transactions are done and the max profit = 0.
+```
+
+Constraints:
+```java
+1 <= prices.length <= 105
+0 <= prices[i] <= 104
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 39
+
+Valid Palindrome (Easy)
+-
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters 
+and removing all non-alphanumeric characters, it reads the same forward and backward. 
+Alphanumeric characters include letters and numbers.
+Given a string s, return true if it is a palindrome, or false otherwise.
+
+
+
+Example 1:
+```java
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+```
+Example 2:
+```java
+Input: s = "race a car"
+Output: false
+Explanation: "raceacar" is not a palindrome.
+```
+Example 3:
+```java
+Input: s = " "
+Output: true
+Explanation: s is an empty string "" after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+```
+
+Constraints:
+```java
+1 <= s.length <= 2 * 105
+s consists only of printable ASCII characters.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 40
+
+Missing Number (Easy)
+-
+
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+
+
+Example 1:
+```java
+Input: nums = [3,0,1]
+Output: 2
+Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
+```
+Example 2:
+```java
+Input: nums = [0,1]
+Output: 2
+Explanation: n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.
+```
+Example 3:
+```java
+Input: nums = [9,6,4,2,3,5,7,0,1]
+Output: 8
+Explanation: n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.
+```
+Example 4:
+```java
+Input: nums = [0]
+Output: 1
+Explanation: n = 1 since there is 1 number, so all numbers are in the range [0,1]. 1 is the missing number in the range since it does not appear in nums.
+```
+
+
+Constraints:
+```java
+n == nums.length
+1 <= n <= 104
+0 <= nums[i] <= n
+All the numbers of nums are unique.
+```
+
+Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?
 
 [к оглавлению](#Tasks-from-leetcode)

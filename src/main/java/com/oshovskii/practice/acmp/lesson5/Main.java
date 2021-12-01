@@ -10,13 +10,14 @@ public class Main {
 
         int a = in.nextInt();
 
-        if(visokosniyYear(a)){
-            System.out.printf("13/09/%04d",a);
+        if (visokosniyYear(a)) {
+            System.out.printf("13/09/%04d", a);
         } else {
             System.out.printf("12/09/%04d", a);
         }
         out.flush();
     }
+
     public static boolean visokosniyYear(int year) {
         if (year < 0) {
             throw new IllegalArgumentException("Negative year");
