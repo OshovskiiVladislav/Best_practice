@@ -40,6 +40,10 @@
 + [Lesson 38. Best Time to Buy and Sell Stock](#Leetcode-Lesson-38) ![icon][done]
 + [Lesson 39. Valid Palindrome](#Leetcode-Lesson-39) ![icon][done]
 + [Lesson 40. Missing Number](#Leetcode-Lesson-40) ![icon][done]
++ [Lesson 41. Min Stack](#Leetcode-Lesson-41) ![icon][done]
++ [Lesson 42. Excel Sheet Column Number](#Leetcode-Lesson-42) ![icon][done]
++ [Lesson 43. Move Zeroes](#Leetcode-Lesson-43) ![icon][done]
++ [Lesson 44. First Unique Character in a String](#Leetcode-Lesson-43) ![icon][done]
 
 [Список разделов](README.md)
 
@@ -1615,5 +1619,160 @@ All the numbers of nums are unique.
 ```
 
 Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 41
+
+Min Stack
+-
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+Implement the `MinStack` class:
+
+- `MinStack()` initializes the stack object.
+- `void push(int val)` pushes the element val onto the stack.
+- `void pop()` removes the element on the top of the stack.
+- `int top()` gets the top element of the stack.
+- `int getMin()` retrieves the minimum element in the stack.
+
+Example 1:
+```java
+Input
+["MinStack","push","push","push","getMin","pop","top","getMin"]
+[[],[-2],[0],[-3],[],[],[],[]]
+
+Output
+[null,null,null,null,-3,null,0,-2]
+
+Explanation
+MinStack minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+minStack.getMin(); // return -3
+minStack.pop();
+minStack.top();    // return 0
+minStack.getMin(); // return -2
+```
+
+Constraints:
+```java
+-231 <= val <= 231 - 1
+Methods pop, top and getMin operations will always be called on non-empty stacks.
+At most 3 * 104 calls will be made to push, pop, top, and getMin.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 42
+
+Excel Sheet Column Number
+-
+Given a string `columnTitle` that represents the column title as appear in an Excel sheet, 
+return its corresponding column number.
+
+For example:
+```java
+A -> 1
+B -> 2
+C -> 3
+...
+Z -> 26
+AA -> 27
+AB -> 28
+...
+```
+
+Example 1:
+```java
+Input: columnTitle = "A"
+Output: 1
+```
+Example 2:
+```java
+Input: columnTitle = "AB"
+Output: 28
+```
+Example 3:
+```java
+Input: columnTitle = "ZY"
+Output: 701
+```
+Example 4:
+```java
+Input: columnTitle = "FXSHRXW"
+Output: 2147483647
+```
+
+Constraints:
+```java
+1 <= columnTitle.length <= 7
+columnTitle consists only of uppercase English letters.
+columnTitle is in the range ["A", "FXSHRXW"].
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 43
+
+Move Zeroes
+-
+Given an integer array `nums`, move all `0's` to the end of it while maintaining the relative order of the non-zero elements.
+
+**Note** that you must do this in-place without making a copy of the array.
+
+Example 1:
+```java
+Input: nums = [0,1,0,3,12]
+Output: [1,3,12,0,0]
+```
+Example 2:
+```java
+Input: nums = [0]
+Output: [0]
+```
+
+Constraints:
+```java
+1 <= nums.length <= 104
+-231 <= nums[i] <= 231 - 1
+```
+
+**Follow up:** Could you minimize the total number of operations done?
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 43
+
+First Unique Character in a String
+-
+Given a string `s`, find the first non-repeating character in it and return its index. If it does not exist, return `-1`.
+
+
+
+Example 1:
+```java
+Input: s = "leetcode"
+Output: 0
+```
+Example 2:
+```java
+Input: s = "loveleetcode"
+Output: 2
+```
+Example 3:
+```java
+Input: s = "aabb"
+Output: -1
+```
+
+Constraints:
+```java
+1 <= s.length <= 105
+s consists of only lowercase English letters.
+```
 
 [к оглавлению](#Tasks-from-leetcode)

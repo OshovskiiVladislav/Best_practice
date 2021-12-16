@@ -3,7 +3,7 @@
 + [leetcode.com](#Tasks-from-leetcode) 
 + [acmp.ru](#Tasks-from-acmp)
 + [codewars.com](#Tasks-from-codewars)
-+ [Другие](#Tasks-from-other-sources)
++ [Tasks from other sources](#Tasks-from-other-sources)
 
 
 ## Tasks from leetcode
@@ -47,6 +47,10 @@
 + [Lesson 38. Best Time to Buy and Sell Stock](leetcode.md#Leetcode-Lesson-38) 
 + [Lesson 39. Valid Palindrome](leetcode.md#Leetcode-Lesson-39)
 + [Lesson 40. Missing Number](leetcode.md#Leetcode-Lesson-40)
++ [Lesson 41. Min Stack](leetcode.md#Leetcode-Lesson-41)
++ [Lesson 42. Excel Sheet Column Number](leetcode.md#Leetcode-Lesson-42)
++ [Lesson 43. Move Zeroes](leetcode.md#Leetcode-Lesson-43)
++ [Lesson 44. First Unique Character in a String](leetcode.md#Leetcode-Lesson-43)
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 
