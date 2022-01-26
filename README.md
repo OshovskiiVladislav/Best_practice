@@ -51,6 +51,7 @@
 + [Lesson 42. Excel Sheet Column Number](leetcode.md#Leetcode-Lesson-42)
 + [Lesson 43. Move Zeroes](leetcode.md#Leetcode-Lesson-43)
 + [Lesson 44. First Unique Character in a String](leetcode.md#Leetcode-Lesson-43)
++ [Lesson 45. Happy Number](leetcode.md#Leetcode-Lesson-45)
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 

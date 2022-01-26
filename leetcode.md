@@ -43,7 +43,8 @@
 + [Lesson 41. Min Stack](#Leetcode-Lesson-41) ![icon][done]
 + [Lesson 42. Excel Sheet Column Number](#Leetcode-Lesson-42) ![icon][done]
 + [Lesson 43. Move Zeroes](#Leetcode-Lesson-43) ![icon][done]
-+ [Lesson 44. First Unique Character in a String](#Leetcode-Lesson-43) ![icon][done]
++ [Lesson 44. First Unique Character in a String](#Leetcode-Lesson-44) ![icon][done]
++ [Lesson 45. Happy Number](#Leetcode-Lesson-45) ![icon][done]
 
 [Список разделов](README.md)
 
@@ -1745,7 +1746,7 @@ Constraints:
 [к оглавлению](#Tasks-from-leetcode)
 
 
-## Leetcode Lesson 43
+## Leetcode Lesson 44
 
 First Unique Character in a String
 -
@@ -1773,6 +1774,48 @@ Constraints:
 ```java
 1 <= s.length <= 105
 s consists of only lowercase English letters.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 45
+
+Happy Number
+-
+Write an algorithm to determine if a number n is happy.
+
+A **happy number** is a number defined by the following process:
+
+- Starting with any positive integer, replace the number by the sum of the squares of its digits.
+- Repeat the process until the number equals 1 (where it will stay), or it **loops endlessly in a cycle** which does not include 1.
+- Those numbers for which this process ends in 1 are happy. 
+
+Return `true` if `n` is a happy number, and `false` if not.
+
+
+
+Example 1:
+
+```java
+Input: n = 19
+Output: true
+Explanation:
+12 + 92 = 82
+82 + 22 = 68
+62 + 82 = 100
+12 + 02 + 02 = 1
+```
+
+Example 2:
+```java
+Input: n = 2
+Output: false
+```
+
+Constraints:
+```java
+1 <= n <= 231 - 1
 ```
 
 [к оглавлению](#Tasks-from-leetcode)

@@ -2,7 +2,7 @@ package com.oshovskii.practice.leetcode.easy.lesson8;
 
 public class Solution {
     public static void main(String[] args) {
-        System.out.println(reverse(1534236469));
+        System.out.println(reverse(1534236));
     }
 
     public static int reverse(int x) {
