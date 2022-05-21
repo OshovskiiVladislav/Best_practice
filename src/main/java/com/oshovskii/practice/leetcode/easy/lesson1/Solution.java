@@ -1,8 +1,6 @@
 package com.oshovskii.practice.leetcode.easy.lesson1;
 
 public class Solution {
-
-
     public static void main(String[] args) {
         System.out.println(isPrefixString("iloveleetcode", new String[]{"i", "love", "leetcode", "apples"}));
     }
