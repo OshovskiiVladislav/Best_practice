@@ -46,6 +46,8 @@
 + [Lesson 44. First Unique Character in a String](#Leetcode-Lesson-44) ![icon][done]
 + [Lesson 45. Happy Number](#Leetcode-Lesson-45) ![icon][done]
 + [Lesson 46. Intersection of Two Arrays II](#Leetcode-Lesson-46) ![icon][done]
++ [Lesson 47. Reverse Bits](#Leetcode-Lesson-47) ![icon][done]
++ [Lesson 48. Contains Duplicate II](#Leetcode-Lesson-47) ![icon][done]
 
 [Список разделов](README.md)
 
@@ -1859,3 +1861,110 @@ What if elements of nums2 are stored on disk, and the memory is limited such tha
 ```
 
 [к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 47
+
+Reverse Bits
+-
+Reverse bits of `a` given 32 bits unsigned integer.
+
+Note:
+
+    Note that in some languages, such as Java, there is no unsigned integer type. In this case, both input and output will be given as a signed integer type. They should not affect your implementation, as the integer's internal binary representation is the same, whether it is signed or unsigned.
+    In Java, the compiler represents the signed integers using 2's complement notation. Therefore, in Example 2 above, the input represents the signed integer -3 and the output represents the signed integer -1073741825.
+
+Example 1:
+```java
+Input: n = 00000010100101000001111010011100
+Output:    964176192 (00111001011110000010100101000000)
+Explanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000.
+```
+
+Example 2:
+```java
+Input: n = 11111111111111111111111111111101
+Output:   3221225471 (10111111111111111111111111111111)
+Explanation: The input binary string 11111111111111111111111111111101 represents the unsigned integer 4294967293, so return 3221225471 which its binary representation is 10111111111111111111111111111111.
+```
+
+Constraints:
+
+    The input must be a binary string of length 32
+
+Follow up: If this function is called many times, how would you optimize it?
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 48
+
+Contains Duplicate II
+-
+Given an integer array `nums` and an integer `k`, return `true` if there are two distinct indices i and j 
+in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+
+Example 1:
+```
+Input: nums = [1,2,3,1], k = 3
+Output: true
+```
+Example 2:
+```
+Input: nums = [1,0,1,1], k = 1
+Output: true
+```
+Example 3:
+```
+Input: nums = [1,2,3,1,2,3], k = 2
+Output: false
+```
+
+Constraints:
+
+    1 <= nums.length <= 105
+    -109 <= nums[i] <= 109
+    0 <= k <= 105
+
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 49
+
+Island Perimeter
+-
+You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water.
+Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, 
+and there is exactly one island (i.e., one or more connected land cells).
+The island doesn't have "lakes", meaning the water inside isn't connected to the water around the island. 
+One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. 
+Determine the perimeter of the island.
+
+Example 1:
+![UML ACMP 1](src/main/resources/image/leetcode49.png)
+
+Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
+Output: 16
+Explanation: The perimeter is the 16 yellow stripes in the image above.
+
+Example 2:
+
+Input: grid = [[1]]
+Output: 4
+
+Example 3:
+
+Input: grid = [[1,0]]
+Output: 4
+
+
+Constraints:
+
+    row == grid.length
+    col == grid[i].length
+    1 <= row, col <= 100
+    grid[i][j] is 0 or 1.
+    There is exactly one island in grid.
+    
+[к оглавлению](#Tasks-from-leetcode)
+

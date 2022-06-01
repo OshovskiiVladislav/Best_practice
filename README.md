@@ -53,6 +53,8 @@
 + [Lesson 44. First Unique Character in a String](leetcode.md#Leetcode-Lesson-43)
 + [Lesson 45. Happy Number](leetcode.md#Leetcode-Lesson-45)
 + [Lesson 46. Intersection of Two Arrays II](leetcode.md#Leetcode-Lesson-46) 
++ [Lesson 47. Reverse Bits](leetcode.md#Leetcode-Lesson-47) 
++ [Lesson 48. Contains Duplicate II](leetcode.md#Leetcode-Lesson-47) ![icon][done]
 
 
 ## Tasks from acmp
