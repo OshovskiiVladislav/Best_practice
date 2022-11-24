@@ -1,7 +1,6 @@
 package com.oshovskii.practice.leetcode.easy.lesson9;
 
 public class Solution {
-
     public void reverseString(char[] s) {
         char tmp;
         for (int i = 0; i < s.length / 2; i++) {

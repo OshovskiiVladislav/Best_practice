@@ -1,6 +1,9 @@
 package com.oshovskii.practice.leetcode.easy.lesson15;
 
 public class Solution {
+    public static void main(String[] args) {
+
+    }
     public ListNode deleteDuplicates(ListNode head) {
         ListNode current = head;
         while (current != null && current.next != null) {

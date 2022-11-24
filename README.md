@@ -54,7 +54,9 @@
 + [Lesson 45. Happy Number](leetcode.md#Leetcode-Lesson-45)
 + [Lesson 46. Intersection of Two Arrays II](leetcode.md#Leetcode-Lesson-46) 
 + [Lesson 47. Reverse Bits](leetcode.md#Leetcode-Lesson-47) 
-+ [Lesson 48. Contains Duplicate II](leetcode.md#Leetcode-Lesson-47) ![icon][done]
++ [Lesson 48. Contains Duplicate II](leetcode.md#Leetcode-Lesson-47)
++ [Lesson 49. Island Perimeter](#Leetcode-Lesson-49)
++ [Lesson 50. Valid Anagram](#Leetcode-Lesson-50)
 
 
 ## Tasks from acmp
@@ -95,3 +97,5 @@
 + [Lesson 12. Вычисление квадратного корня без библиотечных методов](other.md#other-Lesson-12) 
 + [Lesson 13. Развернуть строку](other.md#other-Lesson-13) 
 + [Lesson 14. Вычисление арифметического выражения из строки методом рекурсивного спуска](other.md#other-Lesson-14)
++ [Lesson 15. Многопоточность.Разделить и перевернуть строку](#other-Lesson-15)
++ [Lesson 16. Реализация задачи о ферзях в многопотоке](#other-Lesson-16)

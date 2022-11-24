@@ -47,7 +47,9 @@
 + [Lesson 45. Happy Number](#Leetcode-Lesson-45) ![icon][done]
 + [Lesson 46. Intersection of Two Arrays II](#Leetcode-Lesson-46) ![icon][done]
 + [Lesson 47. Reverse Bits](#Leetcode-Lesson-47) ![icon][done]
-+ [Lesson 48. Contains Duplicate II](#Leetcode-Lesson-47) ![icon][done]
++ [Lesson 48. Contains Duplicate II](#Leetcode-Lesson-48) ![icon][done]
++ [Lesson 49. Island Perimeter](#Leetcode-Lesson-49) ![icon][done]
++ [Lesson 50. Valid Anagram](#Leetcode-Lesson-50) ![icon][done]
 
 [Список разделов](README.md)
 
@@ -1967,4 +1969,39 @@ Constraints:
     There is exactly one island in grid.
     
 [к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 50
+
+Valid Anagram
+
+-
+Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
+typically using all the original letters exactly once.
+
+Example 1:
+
+Input: s = "anagram", t = "nagaram"
+Output: true
+
+Example 2:
+
+Input: s = "rat", t = "car"
+Output: false
+
+ 
+
+Constraints:
+
+    1 <= s.length, t.length <= 5 * 104
+    s and t consist of lowercase English letters.
+
+ 
+
+Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case.
+
+[к оглавлению](#Tasks-from-leetcode)
+
 

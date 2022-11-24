@@ -17,7 +17,6 @@ public class Solution {
      *         s2 = 5
      */
     // you need treat n as an unsigned value
-    // you need treat n as an unsigned value
     public static int reverseBits(int n) {
 
         int x = 0;

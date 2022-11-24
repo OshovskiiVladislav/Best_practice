@@ -15,6 +15,7 @@
 + [Lesson 13. Развернуть строку](#other-Lesson-13) ![icon][done]
 + [Lesson 14. Вычисление арифметического выражения из строки методом рекурсивного спуска](#other-Lesson-14) ![icon][done]
 + [Lesson 15. Многопоточность.Разделить и перевернуть строку](#other-Lesson-15) ![icon][done]
++ [Lesson 16. Реализация задачи о ферзях в многопотоке](#other-Lesson-16) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -264,5 +265,84 @@ EOF - end of file
 Пример:
 input: 12345678
 output: 21436587
+
+[к оглавлению](#Tasks-from-other-sources)
+
+
+## other Lesson 16
+Реализация задачи о ферзях в многопотоке
+-
+Есть стандартная задача о расстановки ферзей на шахматной доске,чтобы они не били друг друга(все возможные расстановки)
+Code:
+```java
+public class ferzi {
+    private int SIZE ;
+    private int board[][];
+    private int results_count = 0;
+    private int threadsCount;
+    public ferzi(int N,int potok){
+        SIZE=N;
+        board=new int [N][N];
+        //zan=new boolean [N][N];
+        results_count=0;
+        threadsCount=potok;
+    }
+    public boolean tryQueen(int a, int b) {
+        for (int i = 0; i < a; ++i)
+            if (board[i][b]==1)
+                return false;
+ 
+        for (int i = 1; i <= a && b - i >= 0; ++i)
+            if (board[a - i][b - i]==1)
+                return false;
+ 
+        for (int i = 1; i <= a && b + i < SIZE; i++)
+            if (board[a - i][b + i]==1)
+                return false;
+ 
+        return true;
+    }
+    public void setQueen(int a){
+        if (a == SIZE) {
+            ++results_count;
+            System.out.print("Result #" + results_count +'\n');
+            showBoard();
+            return;
+        }
+        for(int i = 0; i < SIZE; ++i){
+            if (tryQueen(a, i)) {
+                board[a][i] = 1;
+                setQueen(a + 1);
+                board[a][i] = 0;
+            }
+        }
+ 
+        return;
+    }
+    public  void showBoard(){
+        for (int a = 0; a < SIZE; ++a)
+        {
+            for (int b = 0; b < SIZE; ++b)
+            {
+                System.out.print((board[a][b]==1) ? "Q " : ". ");
+            }
+            System.out.print('\n');
+        }
+    }
+```
+
+Main method:
+```java
+public class Main {
+    public static void main(String args[]) {
+         ferzi fer = new ferzi(4,5);
+         fer. setQueen(0);
+        }
+}
+```
+
+Необходимо сделать из обычной реализацию,реализацию на потоках. Как вариант: ставить первого ферзя на 1 
+позицию,и потом в потоке расставлять все остальные,параллельно с этим ставить 1 ферзя на след позицию и 
+опять -таки же ставить всех остальных в потоке,но не знаю как реализовать
 
 [к оглавлению](#Tasks-from-other-sources)
