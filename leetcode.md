@@ -50,6 +50,23 @@
 + [Lesson 48. Contains Duplicate II](#Leetcode-Lesson-48) ![icon][done]
 + [Lesson 49. Island Perimeter](#Leetcode-Lesson-49) ![icon][done]
 + [Lesson 50. Valid Anagram](#Leetcode-Lesson-50) ![icon][done]
++ [Lesson 51. 1114 Print in Order](#Leetcode-Lesson-51) ![icon][done]
++ [Lesson 52. 1768. Merge Strings Alternately](#Leetcode-Lesson-52) ![icon][done]
++ [Lesson 53. 2405. Optimal Partition of String](#Leetcode-Lesson-53) ![icon][done]
++ [Lesson 54. 35. Search Insert Position](#Leetcode-Lesson-54) ![icon][done]
++ [Lesson 55. 22 Generate Parentheses](#Leetcode-Lesson-55) ![icon][done]
++ [Lesson 56. 258 Add Digits](#Leetcode-Lesson-56) ![icon][done]
++ [Lesson 57. 111 Minimum Depth of Binary Tree](#Leetcode-Lesson-57) ![icon][done]
++ [Lesson 58. 2. Add Two Numbers](#Leetcode-Lesson-58) ![icon][done]
++ [Lesson 59. 230. Kth Smallest Element in a BST](#Leetcode-Lesson-59) ![icon][done]
++ [Lesson 60. 797. All Paths From Source to Target](#Leetcode-Lesson-60) ![icon][done]
++ [Lesson 61. 75. Sort Colors](#Leetcode-Lesson-61) ![icon][done]
++ [Lesson 62. 5. Longest Palindromic Substring](#Leetcode-Lesson-62) ![icon][done]
++ [Lesson 63. 67. Add Binary](#Leetcode-Lesson-63) ![icon][done]
++ [Lesson 64. 3. Longest Substring Without Repeating Characters](#Leetcode-Lesson-64) ![icon][done]
++ [Lesson 65. 100. Same Tree](#Leetcode-Lesson-65) ![icon][done]
++ [Lesson 66. 852 Peak Index in a Mountain Array](#Leetcode-Lesson-66) ![icon][done]
+
 
 [Список разделов](README.md)
 
@@ -1991,17 +2008,585 @@ Example 2:
 Input: s = "rat", t = "car"
 Output: false
 
- 
+
 
 Constraints:
 
     1 <= s.length, t.length <= 5 * 104
     s and t consist of lowercase English letters.
 
- 
+
 
 Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case.
 
 [к оглавлению](#Tasks-from-leetcode)
 
 
+## Leetcode Lesson 51
+
+1114 Print in Order
+-
+Suppose we have a class:
+```java
+    public class Foo {
+      public void first() { print("first"); }
+      public void second() { print("second"); }
+      public void third() { print("third"); }
+    }
+```
+The same instance of `Foo` will be passed to three different threads. Thread A will call `first()`, thread B will call 
+`second()`, and thread C will call `third()`. Design a mechanism and modify the program to ensure that `second()` is 
+executed after `first()`, and `third()` is executed after `second()`.
+
+**Note:**
+
+We do not know how the threads will be scheduled in the operating system, even though the numbers in the input seem to 
+imply the ordering. The input format you see is mainly to ensure our tests' comprehensiveness.
+
+Example 1:
+```
+Input: nums = [1,2,3]
+        Output: "firstsecondthird"
+        Explanation: There are three threads being fired asynchronously. The input [1,2,3] means thread A calls first(), 
+        thread B calls second(), and thread C calls third(). "firstsecondthird" is the correct output.
+```
+Example 2:
+```
+Input: nums = [1,3,2]
+Output: "firstsecondthird"
+Explanation: The input [1,3,2] means thread A calls first(), thread B calls third(), and thread C calls second(). 
+"firstsecondthird" is the correct output.
+```
+
+**Constraints:**
+- `nums` is a permutation of `[1, 2, 3]`.
+
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 52
+
+1768 Merge Strings Alternately
+-
+
+You are given two strings `word1` and `word2`. Merge the strings by adding letters in alternating order, 
+starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
+Return the merged string.
+
+**Example 1:**
+```java
+Input: word1 = "abc", word2 = "pqr"
+Output: "apbqcr"
+Explanation: The merged string will be merged as so:
+word1:  a   b   c
+word2:    p   q   r
+merged: a p b q c r
+```
+
+**Example 2:**
+```java
+Input: word1 = "ab", word2 = "pqrs"
+Output: "apbqrs"
+Explanation: Notice that as word2 is longer, "rs" is appended to the end.
+word1:  a   b 
+word2:    p   q   r   s
+merged: a p b q   r   s
+```
+
+**Example 3:**
+```java
+Input: word1 = "abcd", word2 = "pq"
+Output: "apbqcd"
+Explanation: Notice that as word1 is longer, "cd" is appended to the end.
+word1:  a   b   c   d
+word2:    p   q 
+merged: a p b q c   d
+```
+
+
+**Constraints:**
+
+    1 <= word1.length, word2.length <= 100
+    word1 and word2 consist of lowercase English letters.
+
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 53
+
+2405 Optimal Partition of String
+-
+Given a string `s`, partition the string into one or more substrings such that the characters in each substring are 
+unique. That is, no letter appears in a single substring more than once.
+Return the minimum number of substrings in such a partition.
+Note that each character should belong to exactly one substring in a partition.
+
+Example 1:
+```java
+
+
+Input: s = "abacaba"
+Output: 4
+Explanation:
+Two possible partitions are ("a","ba","cab","a") and ("ab","a","ca","ba").
+It can be shown that 4 is the minimum number of substrings needed.
+```
+
+Example 2:
+```java
+Input: s = "ssssss"
+Output: 6
+Explanation:
+The only valid partition is ("s","s","s","s","s","s").
+```
+
+Constraints:
+
+    1 <= s.length <= 105
+    s consists of only English lowercase letters.
+
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 54
+
+35 Search Insert Position
+-
+Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, 
+return the index where it would be if it were inserted in order.
+
+You must write an algorithm with `O(log n)` runtime complexity.
+
+Example 1:
+```java
+    Input: nums = [1,3,5,6], target = 5
+    Output: 2
+```
+Example 2:
+```java
+    Input: nums = [1,3,5,6], target = 2
+    Output: 1
+```
+Example 3:
+```java
+    Input: nums = [1,3,5,6], target = 7
+    Output: 4
+```
+
+Constraints:
+```
+    1 <= nums.length <= 104
+    -104 <= nums[i] <= 104
+    nums contains distinct values sorted in ascending order.
+    -104 <= target <= 104
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 55
+
+22 Generate Parentheses
+-
+Given `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+**Example 1:**
+
+```java
+Input: n = 3
+Output: ["((()))","(()())","(())()","()(())","()()()"]
+```
+**Example 2:**
+
+```java
+Input: n = 1
+Output: ["()"]
+```
+
+**Constraints:**
+```
+    1 <= n <= 8
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 56
+
+258 Add Digits
+-
+Given an integer `num`, repeatedly add all its digits until the result has only one digit, and return it.
+
+**Example 1:**
+```java
+Input: num = 38
+Output: 2
+Explanation: The process is
+38 --> 3 + 8 --> 11
+11 --> 1 + 1 --> 2
+Since 2 has only one digit, return it.
+```
+
+**Example 2:**
+```java
+Input: num = 0
+Output: 0
+
+```
+
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 57
+
+111 Minimum Depth of Binary Tree
+-
+Given a binary tree, find its minimum depth.
+The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+*Note:* A leaf is a node with no children.
+
+**Example 1:**
+
+![LeetCode 57](src/main/resources/image/leetCode57.png)
+
+```java
+Input: root = [3,9,20,null,null,15,7]
+Output: 2
+```
+
+**Example 2:**
+```java
+Input: root = [2,null,3,null,4,null,5,null,6]
+Output: 5
+```
+
+**Constraints:**
+```
+
+    The number of nodes in the tree is in the range [0, 105].
+    -1000 <= Node.val <= 1000
+
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 58
+
+2 Add Two Numbers (Medium)
+-
+You are given two **non-empty** linked lists representing two non-negative integers. The digits are stored in 
+**reverse order**, and each of their nodes contains a single digit. Add the two numbers and return the sum as 
+a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+![LeetCode 58](src/main/resources/image/leetcode58AddTwoNumbers.png)
+
+```java
+Input: l1 = [2,4,3], l2 = [5,6,4]
+Output: [7,0,8]
+Explanation: 342 + 465 = 807.
+```
+
+**Example 2:**
+```java
+Input: l1 = [0], l2 = [0]
+Output: [0]
+```
+
+**Example 3:**
+```java
+Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+Output: [8,9,9,9,0,0,0,1]
+```
+
+Constraints:
+```
+    The number of nodes in each linked list is in the range [1, 100].
+    0 <= Node.val <= 9
+    It is guaranteed that the list represents a number that does not have leading zeros.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 59
+
+230 Kth Smallest Element in a BST
+-
+
+Given the `root` of a binary search tree, and an integer `k`, return the `k th` smallest value (1-indexed) of all the 
+values of the nodes in the tree.
+
+**Example 1:**
+![LeetCode 59_1](src/main/resources/image/leetcode59_230.png)
+```java
+Input: root = [3,1,4,null,2], k = 1
+Output: 1
+```
+
+**Example 2:**
+![LeetCode 59_2](src/main/resources/image/leetcode59_230_2.png)
+```java
+Input: root = [5,3,6,2,4,null,null,1], k = 3
+Output: 3
+```
+
+Constraints:
+```
+    The number of nodes in the tree is n.
+    1 <= k <= n <= 104
+    0 <= Node.val <= 104
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 60
+
+797 All Paths From Source to Target
+-
+Given a directed acyclic graph (`DAG`) of `n` nodes labeled from `0` to `n - 1`, find all possible paths from node `0` 
+to node `n - 1` and return them in any order.
+
+The graph is given as follows: `graph[i]` is a list of all nodes you can visit from node `i` 
+(i.e., there is a directed edge from node `i` to node `graph[i][j]`).
+
+**Example 1:**
+![LeetCode 60_1](src/main/resources/image/leetcode_60_797.png)
+```java
+Input: graph = [[1,2],[3],[3],[]]
+Output: [[0,1,3],[0,2,3]]
+Explanation: There are two paths: 0 -> 1 -> 3 and 0 -> 2 ->
+```
+
+Example 2:
+![LeetCode 60_2](src/main/resources/image/leetcode_60_2_797.png)
+```java
+Input: graph = [[4,3,1],[3,2,4],[3],[4],[]]
+Output: [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
+```
+
+Constraints:
+```
+    n == graph.length
+    2 <= n <= 15
+    0 <= graph[i][j] < n
+    graph[i][j] != i (i.e., there will be no self-loops).
+    All the elements of graph[i] are unique.
+    The input graph is guaranteed to be a DAG.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 61
+
+75 Sort Colors
+-
+Given an array `nums` with `n` objects colored red, white, or blue, sort them `in-place` so that objects of the same color 
+are adjacent, with the colors in the order red, white, and blue.
+We will use the integers `0`, `1`, and `2` to represent the color red, white, and blue, respectively.
+You must solve this problem without using the library's sort function.
+
+**Example 1:**
+```java
+Input: nums = [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+```
+
+**Example 2:**
+```java
+Input: nums = [2,0,1]
+Output: [0,1,2]
+```
+
+
+**Constraints:**
+```
+    n == nums.length
+    1 <= n <= 300
+    nums[i] is either 0, 1, or 2.
+```
+
+
+Follow up: Could you come up with a one-pass algorithm using only constant extra space?
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 62
+
+5 Longest Palindromic Substring
+-
+Given a string `s`, return the longest palindromic substring in `s`.
+
+**Example 1:**
+```java
+Input: s = "babad"
+Output: "bab"
+Explanation: "aba" is also a valid answer.
+```
+**Example 2:**
+```java
+Input: s = "cbbd"
+Output: "bb"
+```
+
+
+Constraints:
+```
+    1 <= s.length <= 1000
+    s consist of only digits and English letters.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 63
+
+67 Add Binary
+-
+Given two binary strings `a` and `b`, return their sum as a binary string.
+
+**Example 1:**
+```
+    Input: a = "11", b = "1"
+    Output: "100"
+```
+
+**Example 2:**
+```
+    Input: a = "1010", b = "1011"
+    Output: "10101"
+```
+
+**Constraints:**
+```
+    1 <= a.length, b.length <= 104
+    a and b consist only of '0' or '1' characters.
+    Each string does not contain leading zeros except for the zero itself.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 64
+
+3 Longest Substring Without Repeating Characters
+-
+Given a string s, find the length of the longest substring without repeating characters.
+
+**Example 1:**
+```
+    Input: s = "abcabcbb"
+    Output: 3
+    Explanation: The answer is "abc", with the length of 3.
+```
+
+**Example 2:**
+```
+    Input: s = "bbbbb"
+    Output: 1
+    Explanation: The answer is "b", with the length of 1.
+```
+
+**Example 3:**
+```
+    Input: s = "pwwkew"
+    Output: 3
+    Explanation: The answer is "wke", with the length of 3.
+    Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+```
+
+
+**Constraints:**
+```
+    0 <= s.length <= 5 * 104
+    s consists of English letters, digits, symbols and spaces.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 65
+
+100 Same Tree
+-
+Given the roots of two binary trees `p` and `q`, write a function to check if they are the same or not.
+Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+
+**Example 1:**
+![LeetCode 65_1](src/main/resources/image/lesson65_1_Same_Tree_100.png)
+```java
+Input: p = [1,2,3], q = [1,2,3]
+Output: true
+```
+
+**Example 2:**
+![LeetCode 65_2](src/main/resources/image/lesson65_2_Same_Tree_100.png)
+```java
+Input: p = [1,2], q = [1,null,2]
+Output: false
+```
+
+**Example 3:**
+![LeetCode 65_3](src/main/resources/image/lesson65_3_Same_Tree_100.png)
+```java
+Input: p = [1,2,1], q = [1,1,2]
+Output: false
+```
+**Constraints:**
+```
+    The number of nodes in both trees is in the range [0, 100].
+    -10^4 <= Node.val <= 10^4
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 66
+
+852 Peak Index in a Mountain Array
+-
+An array `arr` a *mountain* if the following properties hold:
+- `arr.length >= 3`
+- There exists some `i` with `0 < i < arr.length - 1` such that:
+    - `arr[0] < arr[1] < ... < arr[i - 1] < arr[i]`
+    - `arr[i] > arr[i + 1] > ... > arr[arr.length - 1]`
+
+Given a mountain array arr, return the index i such that 
+`arr[0] < arr[1] < ... < arr[i - 1] < arr[i] > arr[i + 1] > ... > arr[arr.length - 1].`
+
+You must solve it in `O(log(arr.length))` time complexity.
+
+**Example 1:**
+```java
+Input: arr = [0,1,0]
+Output: 1
+```
+
+**Example 2:**
+```java
+Input: arr = [0,2,1,0]
+Output: 1
+```
+
+**Example 3:**
+```java
+Input: arr = [0,10,5,2]
+Output: 1
+```
+
+**Constraints:**
+```
+    3 <= arr.length <= 105
+    0 <= arr[i] <= 106
+    arr is guaranteed to be a mountain array.
+```
+
+[к оглавлению](#Tasks-from-leetcode)

@@ -3,7 +3,7 @@
 + [Lesson 1. С помощью какой коллекции можно отсортировать массив ?](#other-Lesson-1) ![icon][done]
 + [Lesson 2. Lost number in number sequence ?](#other-Lesson-2) ![icon][done]
 + [Lesson 3. Метод который меняет ключи и значениями местами map](#other-Lesson-3) ![icon][done]
-+ [Lesson 4. Метод получающий строку из чисел и сумирующий все числа](#other-Lesson-4) ![icon][done]
++ [Lesson 4. Получить Map, где ключи и значения поменяны местами](#other-Lesson-4) ![icon][done]
 + [Lesson 5. Метод получающий строку из чисел и сумирующий все числа](#other-Lesson-5) ![icon][done]
 + [Lesson 6. Метод сколько повторяется каждое из чисел](#other-Lesson-6) ![icon][done]
 + [Lesson 7. Развернуть собственный лист](#other-Lesson-7) ![icon][done]
@@ -16,7 +16,7 @@
 + [Lesson 14. Вычисление арифметического выражения из строки методом рекурсивного спуска](#other-Lesson-14) ![icon][done]
 + [Lesson 15. Многопоточность.Разделить и перевернуть строку](#other-Lesson-15) ![icon][done]
 + [Lesson 16. Реализация задачи о ферзях в многопотоке](#other-Lesson-16) ![icon][done]
-
++ [Lesson 17. Получить Map, где ключи и значения поменяны местами](#other-Lesson-16) ![icon][done]
 
 [Список разделов](README.md)
 
@@ -90,12 +90,15 @@ public class AlarmTest {
 
 ## other Lesson 4
 
-Метод который меняет ключи и значениями местами map
+Получить Map, где ключи и значения поменяны местами
 -
+```
 Пишем метод, который на вход Map <K,V> и возвращет Map, где ключи и значения поменяны местами
 Так как значения могут совпадать, то тип значения в Map будет уже не K, а Collection<K>
+```
 
 [к оглавлению](#Tasks-from-other-sources)
+
 
 ## other Lesson 5
 

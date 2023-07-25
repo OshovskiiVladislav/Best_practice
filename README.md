@@ -6,6 +6,11 @@
 + [Tasks from other sources](#Tasks-from-other-sources)
 
 
+## Tasks-from-yandex
++ [Lesson 1. Histogram](yandex.md#Yandex-Lesson-1)
++ [Lesson 2. Beautiful string](yandex.md#Yandex-Lesson-2)
+
+
 ## Tasks from leetcode
 + [Lesson 1. 1961.Check If String Is a Prefix of Array](leetcode.md#Leetcode-Lesson-1) 
 + [Lesson 2. Group Anagrams](leetcode.md#Leetcode-Lesson-2) 
@@ -54,9 +59,25 @@
 + [Lesson 45. Happy Number](leetcode.md#Leetcode-Lesson-45)
 + [Lesson 46. Intersection of Two Arrays II](leetcode.md#Leetcode-Lesson-46) 
 + [Lesson 47. Reverse Bits](leetcode.md#Leetcode-Lesson-47) 
-+ [Lesson 48. Contains Duplicate II](leetcode.md#Leetcode-Lesson-47)
++ [Lesson 48. Contains Duplicate II](leetcode.md#Leetcode-Lesson-48)
 + [Lesson 49. Island Perimeter](#Leetcode-Lesson-49)
 + [Lesson 50. Valid Anagram](#Leetcode-Lesson-50)
++ [Lesson 51. 1114 Print in Order](#Leetcode-Lesson-51) 
++ [Lesson 52. 1768. Merge Strings Alternately](#Leetcode-Lesson-52)
++ [Lesson 53. 2405. Optimal Partition of String](#Leetcode-Lesson-53)
++ [Lesson 54. 35. Search Insert Position](#Leetcode-Lesson-54)
++ [Lesson 55. 22 Generate Parentheses](#Leetcode-Lesson-55)
++ [Lesson 56. 258 Add Digits](#Leetcode-Lesson-56)
++ [Lesson 57. 111 Minimum Depth of Binary Tree](#Leetcode-Lesson-57) 
++ [Lesson 58. 2. Add Two Numbers](#Leetcode-Lesson-58)
++ [Lesson 59. 230. Kth Smallest Element in a BST](#Leetcode-Lesson-59) 
++ [Lesson 60. 797. All Paths From Source to Target](#Leetcode-Lesson-60) 
++ [Lesson 61. 75. Sort Colors](#Leetcode-Lesson-61)
++ [Lesson 62. 5. Longest Palindromic Substring](#Leetcode-Lesson-62)
++ [Lesson 63. 67. Add Binary](#Leetcode-Lesson-63)
++ [Lesson 64. 3. Longest Substring Without Repeating Characters](#Leetcode-Lesson-64)
++ [Lesson 65. 100. Same Tree](#Leetcode-Lesson-65)
++ [Lesson 66. 852 Peak Index in a Mountain Array](#Leetcode-Lesson-66)
 
 
 ## Tasks from acmp
@@ -86,7 +107,7 @@
 + [Lesson 1. С помощью какой коллекции можно отсортировать массив ?](other.md#other-Lesson-1) 
 + [Lesson 2. Lost number in number sequence ?](other.md#other-Lesson-2) 
 + [Lesson 3. Метод который меняет ключи и значениями местами map](other.md#other-Lesson-3) 
-+ [Lesson 4. Метод получающий строку из чисел и сумирующий все числа](other.md#other-Lesson-4) 
++ [Lesson 4. Получить Map, где ключи и значения поменяны местами](other.md#other-Lesson-4) 
 + [Lesson 5. Метод получающий строку из чисел и сумирующий все числа](other.md#other-Lesson-5) 
 + [Lesson 6. Метод сколько повторяется каждое из чисел](other.md#other-Lesson-6) 
 + [Lesson 7. Развернуть собственный лист](other.md#other-Lesson-7) 
