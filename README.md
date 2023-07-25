@@ -78,6 +78,7 @@
 + [Lesson 64. 3. Longest Substring Without Repeating Characters](#Leetcode-Lesson-64)
 + [Lesson 65. 100. Same Tree](#Leetcode-Lesson-65)
 + [Lesson 66. 852 Peak Index in a Mountain Array](#Leetcode-Lesson-66)
++ [Lesson 67 263. Ugly Number](#Leetcode-Lesson-67)
 
 
 ## Tasks from acmp

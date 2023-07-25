@@ -66,6 +66,7 @@
 + [Lesson 64. 3. Longest Substring Without Repeating Characters](#Leetcode-Lesson-64) ![icon][done]
 + [Lesson 65. 100. Same Tree](#Leetcode-Lesson-65) ![icon][done]
 + [Lesson 66. 852 Peak Index in a Mountain Array](#Leetcode-Lesson-66) ![icon][done]
++ [Lesson 67 263. Ugly Number](#Leetcode-Lesson-67) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -2587,6 +2588,43 @@ Output: 1
     3 <= arr.length <= 105
     0 <= arr[i] <= 106
     arr is guaranteed to be a mountain array.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 67
+
+263 Ugly Number
+-
+
+An *ugly number* is a positive integer whose prime factors are limited to `2`, `3`, and `5`.
+Given an integer `n`, return `true` if `n` is an *ugly number*.
+
+**Example 1:**
+```
+Input: n = 6
+Output: true
+Explanation: 6 = 2 × 3
+```
+
+**Example 2:**
+```
+Input: n = 1
+Output: true
+Explanation: 1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5.
+```
+
+**Example 3:**
+```
+Input: n = 14
+Output: false
+Explanation: 14 is not ugly since it includes the prime factor 7.
+```
+
+**Constraints:**
+```
+    -231 <= n <= 231 - 1
 ```
 
 [к оглавлению](#Tasks-from-leetcode)
