@@ -22,6 +22,7 @@
 
 [done]:src/main/resources/image/done.png
 
+
 ## other Lesson 1
 
 С помощью какой коллекции можно отсортировать массив ?
@@ -33,25 +34,25 @@ C помощью какой коллекции можно отсортирова
 
 [к оглавлению](#Tasks-from-other-sources)
 
+
 ## other Lesson 2
 
 Lost number in number sequence ?
 -
-An ordered sequence of numbers from 1 to N is given. One number might have deleted from it, then the remaining numbers were mixed. Find the number that was deleted.
+An ordered sequence of numbers from 1 to N is given. One number might have deleted from it, then the remaining numbers 
+were mixed. Find the number that was deleted.
 
-Example:
+**Example:**
 
 The starting array sequence is [1,2,3,4,5,6,7,8,9]
-
 The mixed array with one deleted number is [3,2,4,6,7,8,1,9]
-
 Your function should return the int 5.
-
 If no number was deleted from the array and no difference with it, your function should return the int 0.
 
 Note: N may be 1 or less (in the latter case, the first array will be []).
 
 [к оглавлению](#Tasks-from-other-sources)
+
 
 ## other Lesson 3
 
@@ -59,9 +60,10 @@ Set Alarm
 -
 L1: Set Alarm
 
-Write a function named setAlarm which receives two parameters. The first parameter, employed, is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
-
-The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise. Examples:
+Write a function named setAlarm which receives two parameters. The first parameter, employed, is true whenever you 
+are employed and the second parameter, vacation is true whenever you are on vacation. The function should return true 
+if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). 
+It should return false otherwise. Examples:
 
 ```java
  setAlarm(true, true) -> false
@@ -87,6 +89,7 @@ public class AlarmTest {
 ```
 
 [к оглавлению](#Tasks-from-other-sources)
+
 
 ## other Lesson 4
 
@@ -115,6 +118,7 @@ public class Solution {
 
 [к оглавлению](#Tasks-from-other-sources)
 
+
 ## other Lesson 6
 
 Метод сколько повторяется каждое из чисел
@@ -123,6 +127,7 @@ public class Solution {
 я хочу получить Map<>, которая объяснит мне сколько раз повторяется каждое из чисел</br>
 Например: на вход // 1,2,3,4,2,3,4,100</br>
 Выход: [{1,1}, {2,2}, {3,3}, {4,2} и тд...]
+
 ```java
 public Map<Integer, Integer> calculateRepeats(List<Integer> input) {
     Map<Integer, Integer>
@@ -130,6 +135,7 @@ public Map<Integer, Integer> calculateRepeats(List<Integer> input) {
 ```
 
 [к оглавлению](#Tasks-from-other-sources)
+
 
 ## other Lesson 7
 
@@ -156,6 +162,7 @@ public ListNode reverseListNode(ListNode head) {
 
 [к оглавлению](#Tasks-from-other-sources)
 
+
 ## other Lesson 8
 
 C помощью какой коллекции можно развернуть массив
@@ -166,6 +173,7 @@ C помощью какой коллекции можно развернуть �
 - Priority Queue
 
 [к оглавлению](#Tasks-from-other-sources)
+
 
 ## other Lesson 9
 
@@ -179,6 +187,7 @@ Cоздайте комментарий который будет выполня�
 Чувствуете, откуда ветер дует? Попробуйте предположить!</br>
 
 [к оглавлению](#Tasks-from-other-sources)
+
 
 ## other Lesson 10
 
@@ -202,6 +211,7 @@ class ToInfinity {
 
 [к оглавлению](#Tasks-from-other-sources)
 
+
 ## other Lesson 11
 Cоздать именованный цикл
 -
@@ -213,6 +223,7 @@ Java в сферическом вакууме». В том смысле, что 
 Примечание: кому-то такие "имена" известны как "метки", которые не рекомендуется использовать на практике.</br>
 
 [к оглавлению](#Tasks-from-other-sources)
+
 
 ## other Lesson 12
 Вычисление квадратного корня без библиотечных методов
@@ -232,6 +243,7 @@ class Sqrt {
 
 [к оглавлению](#Tasks-from-other-sources)
 
+
 ## other Lesson 13
 Развернуть строку
 -
@@ -239,6 +251,7 @@ class Sqrt {
 abc -> cba
 
 [к оглавлению](#Tasks-from-other-sources)
+
 
 ## other Lesson 14
 Вычисление арифметического выражения из строки методом рекурсивного спуска

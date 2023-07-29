@@ -79,6 +79,7 @@
 + [Lesson 65. 100. Same Tree](#Leetcode-Lesson-65)
 + [Lesson 66. 852 Peak Index in a Mountain Array](#Leetcode-Lesson-66)
 + [Lesson 67 263. Ugly Number](#Leetcode-Lesson-67)
++ [Lesson 68 101. Symmetric Tree](#Leetcode-Lesson-68)
 
 
 ## Tasks from acmp
@@ -97,7 +98,6 @@
 + [Lesson 13. Головоломка про ферзей](acmp.md#ACMP-Lesson-13) 
 + [Lesson 14. Ролевая игра](acmp.md#ACMP-Lesson-14) 
 + [Lesson 15. Номера автобусов](acmp.md#ACMP-Lesson-15)
-
 
 
 ## Tasks from codewars

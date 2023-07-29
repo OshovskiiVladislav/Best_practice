@@ -1,4 +1,5 @@
 package com.oshovskii.practice.leetcode.easy.lesson67;
+
 import org.junit.Assert;
 import org.junit.Test;
 public class UglyNumberSolutionTest {

@@ -7,18 +7,6 @@
     <groupId>com.oshovskii</groupId>
     <artifactId>best-practice</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>16</source>
-                    <target>16</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -33,5 +21,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
