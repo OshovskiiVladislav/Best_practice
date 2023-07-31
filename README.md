@@ -80,7 +80,7 @@
 + [Lesson 66. 852 Peak Index in a Mountain Array](#Leetcode-Lesson-66)
 + [Lesson 67 263. Ugly Number](#Leetcode-Lesson-67)
 + [Lesson 68 101. Symmetric Tree](#Leetcode-Lesson-68)
-
++ [Lesson 69 104. Maximum Depth of Binary Tree](#Leetcode-Lesson-69)
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 

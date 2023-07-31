@@ -68,6 +68,7 @@
 + [Lesson 66. 852 Peak Index in a Mountain Array](#Leetcode-Lesson-66) ![icon][done]
 + [Lesson 67 263. Ugly Number](#Leetcode-Lesson-67) ![icon][done]
 + [Lesson 68 101. Symmetric Tree](#Leetcode-Lesson-68) ![icon][done]
++ [Lesson 69 104. Maximum Depth of Binary Tree](#Leetcode-Lesson-69) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -2722,6 +2723,37 @@ Output: false
 **Constraints:**
 ```
     The number of nodes in the tree is in the range [1, 1000].
+    -100 <= Node.val <= 100
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 68
+
+104 Maximum Depth of Binary Tree
+-
+Given the `root` of a binary tree, return its maximum depth.
+A binary tree's maximum depth is the number of nodes along the longest path from the root node down to 
+the farthest leaf node.
+
+**Example 1:**
+**Example 1:**</br>
+![LeetCode 68_1](src/main/resources/image/leetcode_69_104.png)
+```java
+Input: root = [3,9,20,null,null,15,7]
+Output: 3
+```
+
+**Example 2:**
+```java
+Input: root = [1,null,2]
+Output: 2
+```
+
+**Constraints:**
+```
+    The number of nodes in the tree is in the range [0, 104].
     -100 <= Node.val <= 100
 ```
 
