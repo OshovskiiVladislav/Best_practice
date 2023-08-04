@@ -81,6 +81,8 @@
 + [Lesson 67 263. Ugly Number](#Leetcode-Lesson-67)
 + [Lesson 68 101. Symmetric Tree](#Leetcode-Lesson-68)
 + [Lesson 69 104. Maximum Depth of Binary Tree](#Leetcode-Lesson-69)
++ [Lesson 70 134. Gas Station](#Leetcode-Lesson-70)
+
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 
