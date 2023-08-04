@@ -1,30 +1,32 @@
 package com.oshovskii.practice.codewars;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-
 import com.oshovskii.practice.codewars.lesson1.JadenCase;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class JadenCaseTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
+class JadenCaseTest {
 
     JadenCase jadenCase = new JadenCase();
 
     @Test
-    public void test() {
-        assertEquals("toJadenCase doesn't return a valide JadenCase String! try again please :)", "Most Trees Are Blue", jadenCase.toJadenCase("most trees are blue"));
+    void test() {
+        assertEquals(
+                "Most Trees Are Blue", jadenCase.toJadenCase("most trees are blue"),
+                "toJadenCase doesn't return a valide JadenCase String! try again please :)");
     }
 
     @Test
-    public void testNullArg() {
-        assertNull("Must return null when the arg is null", jadenCase.toJadenCase(null));
+    void testNullArg() {
+        assertNull(jadenCase.toJadenCase(null),
+                "Must return null when the arg is null");
     }
 
     @Test
-    public void testEmptyArg() {
-        assertNull("Must return null when the arg is empty string", jadenCase.toJadenCase(""));
+    void testEmptyArg() {
+        assertNull(jadenCase.toJadenCase(""),
+                "Must return null when the arg is empty string");
     }
 
 }

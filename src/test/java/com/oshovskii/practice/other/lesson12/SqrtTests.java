@@ -1,12 +1,12 @@
 package com.oshovskii.practice.other.lesson12;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SqrtTests {
+class SqrtTests {
     @Test
-    public void basicTests() {
+    void basicTests() {
         assertEquals(3, Sqrt.calculateSqrt(9));
         assertEquals(2, Sqrt.calculateSqrt(4));
         assertEquals(2, Sqrt.calculateSqrt(5));

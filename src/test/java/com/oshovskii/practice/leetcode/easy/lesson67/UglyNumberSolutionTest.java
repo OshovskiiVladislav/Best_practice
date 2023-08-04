@@ -1,20 +1,28 @@
 package com.oshovskii.practice.leetcode.easy.lesson67;
 
-import org.junit.Assert;
-import org.junit.Test;
-public class UglyNumberSolutionTest {
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-    UglyNumberSolution uglyNumberClass = new UglyNumberSolution();
+import static org.junit.jupiter.api.Assertions.*;
+
+class UglyNumberSolutionTest {
+
+    UglyNumberSolution uglyNumberClass;
+
+    @BeforeEach
+    public void init() {
+        uglyNumberClass = new UglyNumberSolution();
+    }
 
 
     @Test
-    public void UglyNumberTest() {
-        Assert.assertEquals(false, uglyNumberClass.isUgly(14));
+    void UglyNumberTest() {
+        assertFalse(UglyNumberSolution.isUgly(14));
 
-        Assert.assertEquals(true, uglyNumberClass.isUgly(8));
+        assertTrue(UglyNumberSolution.isUgly(8));
 
-        Assert.assertEquals(false, uglyNumberClass.isUgly(-2147483648));
+        assertFalse(UglyNumberSolution.isUgly(-2147483648));
 
-        Assert.assertEquals(true, uglyNumberClass.isUgly(9));
+        assertTrue(UglyNumberSolution.isUgly(9));
     }
 }

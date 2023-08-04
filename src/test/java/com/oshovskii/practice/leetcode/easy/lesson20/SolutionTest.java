@@ -1,17 +1,24 @@
 package com.oshovskii.practice.leetcode.easy.lesson20;
 
-import org.junit.Assert;
-import org.junit.Test;;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class SolutionTest {
+class SolutionTest {
+
+    Solution solution;
+
+    @BeforeEach
+    public void init() {
+        solution = new Solution();
+    }
+
     @Test
-    public void buildArray() {
-        Solution solution = new Solution();
-
-        Assert.assertArrayEquals(new int[]{0, 1, 2, 4, 5, 3},
+    void buildArray() {
+        assertArrayEquals(new int[]{0, 1, 2, 4, 5, 3},
                 solution.buildArray(new int[]{0, 2, 1, 5, 3, 4}));
 
-        Assert.assertArrayEquals(new int[]{4, 5, 0, 1, 2, 3},
+        assertArrayEquals(new int[]{4, 5, 0, 1, 2, 3},
                 solution.buildArray(new int[]{5, 0, 1, 2, 3, 4}));
     }
 }

@@ -1,29 +1,28 @@
 package com.oshovskii.practice.yandex.lesson2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class BeautifulStringTest {
+class BeautifulStringTest {
 
     @Test
-    public void checkBeautifulShortString() {
+    void checkBeautifulShortString() {
         Integer expectedValue = 5;
         assertEquals(expectedValue, BeautifulString.findBeautifulFromString2(2, "abbbcaz"));
     }
 
     @Test
-    public void checkBeautifulString6() {
+    void checkBeautifulString6() {
         Integer expectedValue = 432;
         assertEquals(expectedValue, BeautifulString.findBeautifulFromString2(400,
                 "gcasnpanxtiqghxayrxpvyagmtzapagsqdrsojldoqnugrphltmbjxvklngocdgjcxitufotwuvejpizwmtulmwygurtoi" +
-                      "zcluuzxuvdqiiffmrwfhkpylmwguotjmgzhvobpaksssgpaocqisuvghbvylrfdaportmfmtydjcwoqqxpbnmkaiaewnwd" +
+                        "zcluuzxuvdqiiffmrwfhkpylmwguotjmgzhvobpaksssgpaocqisuvghbvylrfdaportmfmtydjcwoqqxpbnmkaiaewnwd" +
                         "wvqavgvzvmyqmslhaavtsuohpayxhqgyfsorriqkaizgiryruysygrpmhkprpkyrsolqfclojcltwwjfmnyffewumwbw" +
                         "cfvhlhhhbzdfztiucqbtowrfkwlydzuekwrjyqncofjauzgjhbxqwbcayatdhzkmdpzitzxycopstcqbshvspkfvberf" +
                         "guqeezgxhyrngbkunsngcumurssigqlrphnrfxprmsgivrfvgxygakvkgzubwrssprzdfpirsjuyvxbtygbnpbxhepnx" +
@@ -36,25 +35,25 @@ public class BeautifulStringTest {
     }
 
     @Test
-    public void checkBeautifulString() {
+    void checkBeautifulString() {
         Integer expectedValue = 4;
         assertEquals(expectedValue, BeautifulString.findBeautifulFromString2(2, "abcaz"));
     }
 
     @Test
-    public void checkBeautifulLongString() {
+    void checkBeautifulLongString() {
         Integer expectedValue = 24;
         assertEquals(expectedValue, BeautifulString.findBeautifulFromString2(3, "abbbcazzzzzzzzzzzzzzzzzzzzz"));
     }
 
     @Test
-    public void checkBeautifulABString() {
+    void checkBeautifulABString() {
         Integer expectedValue = 2;
         assertEquals(expectedValue, BeautifulString.findBeautifulFromString2(2, "ab"));
     }
 
     @Test
-    public void checkBeautifulVeryLongString() {
+    void checkBeautifulVeryLongString() {
         Integer expectedValue = 49;
         assertEquals(expectedValue, BeautifulString.findBeautifulFromString2(40, "agteewfewdklpmibmfdfgiievcy" +
                 "srqgwdcxyshszmemfimhxrdbrzdetlwowsgzupbrulbukmmzkbbutgnhjeleulchkedipfcukrwmqievgxlqoevefaysdfpdwznpbl" +
@@ -260,13 +259,13 @@ public class BeautifulStringTest {
     }
 
     @Test
-    public void checkBeautifulCustomString() {
+    void checkBeautifulCustomString() {
         Integer expectedValue = 12;
         assertEquals(expectedValue, BeautifulString.findBeautifulFromString2(3, "babbaaaaabaaab"));
     }
 
     @Test
-    public void checkBeautifulVeryVeryLongString() throws IOException {
+    void checkBeautifulVeryVeryLongString() throws IOException {
         Integer expectedValue = 1350;
         String content = Files.readString(Paths.get("src/test/resources/files/test.txt"));
         assertEquals(expectedValue, BeautifulString.findBeautifulFromString2(1258, content));
