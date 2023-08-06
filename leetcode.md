@@ -70,6 +70,7 @@
 + [Lesson 68 101. Symmetric Tree](#Leetcode-Lesson-68) ![icon][done]
 + [Lesson 69 104. Maximum Depth of Binary Tree](#Leetcode-Lesson-69) ![icon][done]
 + [Lesson 70 134. Gas Station](#Leetcode-Lesson-70) ![icon][done]
++ [Lesson 71 222. Count Complete Tree Nodes](#Leetcode-Lesson-71) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -2806,6 +2807,49 @@ Therefore, you can't travel around the circuit once no matter where you start.
     n == gas.length == cost.length
     1 <= n <= 105
     0 <= gas[i], cost[i] <= 104
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 71
+
+222 Count Complete Tree Nodes
+- 
+Given the `root` of a complete binary tree, return the number of the nodes in the tree.
+
+According to `Wikipedia`, every level, except possibly the last, is completely filled in a complete binary tree, and all 
+nodes in the last level are as far left as possible. It can have between `1` and `2^h` nodes inclusive at the last level 
+`h`.
+
+Design an algorithm that runs in less than `O(n)` time complexity.
+
+**Example 1:**</br>
+![LeetCode 68_1](src/main/resources/image/leetcode71_222.png)
+```
+Input: root = [1,2,3,4,5,6]
+Output: 6
+```
+
+**Example 2:**
+```
+Input: root = []
+Output: 0
+```
+
+**Example 3:**
+```
+Input: root = [1]
+Output: 1
+```
+
+**Constraints:**
+```
+
+    The number of nodes in the tree is in the range [0, 5 * 104].
+    0 <= Node.val <= 5 * 104
+    The tree is guaranteed to be complete.
+
 ```
 
 [к оглавлению](#Tasks-from-leetcode)

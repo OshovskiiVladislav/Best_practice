@@ -82,6 +82,7 @@
 + [Lesson 68 101. Symmetric Tree](#Leetcode-Lesson-68)
 + [Lesson 69 104. Maximum Depth of Binary Tree](#Leetcode-Lesson-69)
 + [Lesson 70 134. Gas Station](#Leetcode-Lesson-70)
++ [Lesson 71 222. Count Complete Tree Nodes](#Leetcode-Lesson-71)
 
 
 ## Tasks from acmp
