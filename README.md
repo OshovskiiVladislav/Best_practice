@@ -83,7 +83,7 @@
 + [Lesson 69 104. Maximum Depth of Binary Tree](#Leetcode-Lesson-69)
 + [Lesson 70 134. Gas Station](#Leetcode-Lesson-70)
 + [Lesson 71 222. Count Complete Tree Nodes](#Leetcode-Lesson-71)
-
++ [Lesson 72 226. Invert Binary Tree](#Leetcode-Lesson-72)
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 

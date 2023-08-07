@@ -71,6 +71,7 @@
 + [Lesson 69 104. Maximum Depth of Binary Tree](#Leetcode-Lesson-69) ![icon][done]
 + [Lesson 70 134. Gas Station](#Leetcode-Lesson-70) ![icon][done]
 + [Lesson 71 222. Count Complete Tree Nodes](#Leetcode-Lesson-71) ![icon][done]
++ [Lesson 72 226. Invert Binary Tree](#Leetcode-Lesson-72) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -2850,6 +2851,40 @@ Output: 1
     0 <= Node.val <= 5 * 104
     The tree is guaranteed to be complete.
 
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+## Leetcode Lesson 72
+
+226 Invert Binary Tree
+-
+Given the `root` of a binary tree, invert the tree, and return its root.
+
+**Example 1:**</br>
+![LeetCode 72_1](src/main/resources/image/leetcode_72_226_1.png)</br>
+```
+Input: root = [4,2,7,1,3,6,9]
+Output: [4,7,2,9,6,3,1]
+```
+
+**Example 2:**</br>
+![LeetCode 72_1](src/main/resources/image/leetcode_72_226_2.png)</br>
+```
+Input: root = [2,1,3]
+Output: [2,3,1]
+```
+
+**Example 3:**</br>
+```
+Input: root = []
+Output: []
+```
+
+Constraints:
+```
+    The number of nodes in the tree is in the range [0, 100].
+    -100 <= Node.val <= 100
 ```
 
 [к оглавлению](#Tasks-from-leetcode)
