@@ -72,6 +72,7 @@
 + [Lesson 70 134. Gas Station](#Leetcode-Lesson-70) ![icon][done]
 + [Lesson 71 222. Count Complete Tree Nodes](#Leetcode-Lesson-71) ![icon][done]
 + [Lesson 72 226. Invert Binary Tree](#Leetcode-Lesson-72) ![icon][done]
++ [Lesson 73 953. Verifying an Alien Dictionary](#Leetcode-Lesson-73) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -2855,6 +2856,7 @@ Output: 1
 
 [к оглавлению](#Tasks-from-leetcode)
 
+
 ## Leetcode Lesson 72
 
 226 Invert Binary Tree
@@ -2881,10 +2883,55 @@ Input: root = []
 Output: []
 ```
 
-Constraints:
+**Constraints:**
 ```
     The number of nodes in the tree is in the range [0, 100].
     -100 <= Node.val <= 100
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 72
+
+226 Invert Binary Tree
+-
+In an alien language, surprisingly, they also use English lowercase letters, but possibly in a different order. 
+The order of the alphabet is some permutation of lowercase letters.
+Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the 
+given words are sorted lexicographically in this alien language.
+
+
+**Example 1:**</br>
+```
+Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
+Output: true
+Explanation: As 'h' comes before 'l' in this language, then the sequence is sorted.
+```
+
+**Example 2:**</br>
+![LeetCode 72_1](src/main/resources/image/leetcode_72_226_2.png)</br>
+```
+Input: words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz"
+Output: false
+Explanation: As 'd' comes after 'l' in this language, then words[0] > words[1], hence the sequence is unsorted.
+```
+
+**Example 3:**</br>
+```
+Input: words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz"
+Output: false
+Explanation: The first three characters "app" match, and the second string is shorter (in size.) According to 
+lexicographical rules "apple" > "app", because 'l' > '∅', where '∅' is defined as the blank character which is less 
+than any other character (More info).
+```
+
+**Constraints:**
+```
+    1 <= words.length <= 100
+    1 <= words[i].length <= 20
+    order.length == 26
+    All characters in words[i] and order are English lowercase letters.
 ```
 
 [к оглавлению](#Tasks-from-leetcode)

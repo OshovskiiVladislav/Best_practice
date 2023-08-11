@@ -84,6 +84,8 @@
 + [Lesson 70 134. Gas Station](#Leetcode-Lesson-70)
 + [Lesson 71 222. Count Complete Tree Nodes](#Leetcode-Lesson-71)
 + [Lesson 72 226. Invert Binary Tree](#Leetcode-Lesson-72)
++ [Lesson 73 953. Verifying an Alien Dictionary](#Leetcode-Lesson-73)
+
 
 ## Tasks from acmp
 + [Lesson 1. Неглухой телефон](acmp.md#ACMP-Lesson-1) 
