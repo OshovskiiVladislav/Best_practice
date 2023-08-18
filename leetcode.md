@@ -73,6 +73,7 @@
 + [Lesson 71 222. Count Complete Tree Nodes](#Leetcode-Lesson-71) ![icon][done]
 + [Lesson 72 226. Invert Binary Tree](#Leetcode-Lesson-72) ![icon][done]
 + [Lesson 73 953. Verifying an Alien Dictionary](#Leetcode-Lesson-73) ![icon][done]
++ [Lesson 74 116. Populating Next Right Pointers in Each Node](#Leetcode-Lesson-74) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -2892,7 +2893,7 @@ Output: []
 [к оглавлению](#Tasks-from-leetcode)
 
 
-## Leetcode Lesson 72
+## Leetcode Lesson 73
 
 953 Verifying an Alien Dictionary
 -
@@ -2932,6 +2933,54 @@ than any other character (More info).
     1 <= words[i].length <= 20
     order.length == 26
     All characters in words[i] and order are English lowercase letters.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 74
+
+116 Populating Next Right Pointers in Each Node
+-
+You are given a `perfect binary tree` where all leaves are on the same level, and every parent has two children. 
+The binary tree has the following definition:
+```
+struct Node {
+  int val;
+  Node *left;
+  Node *right;
+  Node *next;
+}
+```
+Populate each next pointer to point to its next right node. If there is no next right node, 
+the next pointer should be set to NULL.
+Initially, all next pointers are set to NULL.
+
+**Example 1:**</br>
+![73_leetcode](src/main/resources/image/73_leetcode.png)</br>
+```
+Input: root = [1,2,3,4,5,6,7]
+Output: [1,#,2,3,#,4,5,6,7,#]
+Explanation: Given the above perfect binary tree (Figure A), your function should populate each next pointer to 
+point to its next right node, just like in Figure B. The serialized output is in level order as connected by the next 
+pointers, with '#' signifying the end of each level.
+```
+
+**Example 2:**</br>
+```
+Input: root = []
+Output: []
+```
+
+**Constraints:**</br>
+```
+    The number of nodes in the tree is in the range [0, 212 - 1].
+    -1000 <= Node.val <= 1000
+```
+Follow-up:
+```
+    You may only use constant extra space.
+    The recursive approach is fine. You may assume implicit stack space does not count as extra space for this problem.
 ```
 
 [к оглавлению](#Tasks-from-leetcode)
