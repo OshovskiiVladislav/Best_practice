@@ -74,6 +74,7 @@
 + [Lesson 72 226. Invert Binary Tree](#Leetcode-Lesson-72) ![icon][done]
 + [Lesson 73 953. Verifying an Alien Dictionary](#Leetcode-Lesson-73) ![icon][done]
 + [Lesson 74 116. Populating Next Right Pointers in Each Node](#Leetcode-Lesson-74) ![icon][done]
++ [Lesson 75 2032. Two Out of Three](#Leetcode-Lesson-75) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -2981,6 +2982,48 @@ Follow-up:
 ```
     You may only use constant extra space.
     The recursive approach is fine. You may assume implicit stack space does not count as extra space for this problem.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 75
+
+2032 Two Out of Three
+-
+Given three integer arrays `nums1`, `nums2`, and `nums3`, return a *distinct* array containing all the values that are 
+present in *at least two* out of the three arrays. You may return the values in *any* order.
+
+**Example 1:**</br>
+```
+Input: nums1 = [1,1,3,2], nums2 = [2,3], nums3 = [3]
+Output: [3,2]
+Explanation: The values that are present in at least two arrays are:
+- 3, in all three arrays.
+- 2, in nums1 and nums2.
+```
+
+**Example 2:**</br>
+```
+Input: nums1 = [3,1], nums2 = [2,3], nums3 = [1,2]
+Output: [2,3,1]
+Explanation: The values that are present in at least two arrays are:
+- 2, in nums2 and nums3.
+- 3, in nums1 and nums2.
+- 1, in nums1 and nums3.
+```
+
+**Example 3:**</br>
+```
+Input: nums1 = [1,2,2], nums2 = [4,3,3], nums3 = [5]
+Output: []
+Explanation: No value is present in at least two arrays.
+```
+
+**Constraints:**</br>
+```
+    1 <= nums1.length, nums2.length, nums3.length <= 100
+    1 <= nums1[i], nums2[j], nums3[k] <= 100
 ```
 
 [к оглавлению](#Tasks-from-leetcode)
