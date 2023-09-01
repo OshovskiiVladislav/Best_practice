@@ -75,6 +75,8 @@
 + [Lesson 73 953. Verifying an Alien Dictionary](#Leetcode-Lesson-73) ![icon][done]
 + [Lesson 74 116. Populating Next Right Pointers in Each Node](#Leetcode-Lesson-74) ![icon][done]
 + [Lesson 75 2032. Two Out of Three](#Leetcode-Lesson-75) ![icon][done]
++ [Lesson 76 52. N-Queens II](#Leetcode-Lesson-76) ![icon][done]
++ [Lesson 77 146. LRU Cache](#Leetcode-Lesson-77) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -3027,3 +3029,83 @@ Explanation: No value is present in at least two arrays.
 ```
 
 [к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 76
+
+52 N-Queens II
+-
+The **n-queens** puzzle is the problem of placing `n` queens on an `n x n` chessboard such that no two queens attack 
+each other.
+Given an integer `n`, return the number of distinct solutions to the **n-queens puzzle**.
+
+**Example 1:**</br>
+![76_leetcode](src/main/resources/image/lesson76_52_1.png)</br>
+```
+Input: n = 4
+Output: 2
+Explanation: There are two distinct solutions to the 4-queens puzzle as shown.
+```
+
+**Example 2:**</br>
+```
+Input: n = 1
+Output: 1
+```
+
+**Constraints:**</br>
+```
+    1 <= n <= 9
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 77
+
+146 LRU Cache
+-
+Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
+
+Implement the LRUCache class:
+
+- `LRUCache(int capacity)` Initialize the LRU cache with positive size `capacity`.
+- `int get(int key)` Return the value of the key if the key exists, otherwise return `-1`.
+- `void put(int key, int value)` Update the value of the `key` if the `key` exists. 
+Otherwise, add the `key-value` pair to the cache. If the number of keys exceeds 
+the `capacity` from this operation, evict the least recently used key.
+
+The functions `get` and `put` must each run in `O(1)` average time complexity.
+
+**Example 1:**
+*Input*
+```
+["LRUCache", "put", "put", "get", "put", "get", "put", "get", "get", "get"]
+[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]
+```
+*Output*
+```
+[null, null, null, 1, null, -1, null, -1, 3, 4]
+```
+
+*Explanation*
+```
+LRUCache lRUCache = new LRUCache(2);
+lRUCache.put(1, 1); // cache is {1=1}
+lRUCache.put(2, 2); // cache is {1=1, 2=2}
+lRUCache.get(1);    // return 1
+lRUCache.put(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3}
+lRUCache.get(2);    // returns -1 (not found)
+lRUCache.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
+lRUCache.get(1);    // return -1 (not found)
+lRUCache.get(3);    // return 3
+lRUCache.get(4);    // return 4
+```
+
+*Constraints:*
+```
+1 <= capacity <= 3000
+0 <= key <= 104
+0 <= value <= 105
+At most 2 * 105 calls will be made to get and put.
+```

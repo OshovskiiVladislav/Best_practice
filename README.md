@@ -87,6 +87,8 @@
 + [Lesson 73 953. Verifying an Alien Dictionary](#Leetcode-Lesson-73)
 + [Lesson 74 116. Populating Next Right Pointers in Each Node](#Leetcode-Lesson-74)
 + [Lesson 75 2032. Two Out of Three](#Leetcode-Lesson-75)
++ [Lesson 76 52. N-Queens II](#Leetcode-Lesson-76)
++ [Lesson 77 146. LRU Cache](#Leetcode-Lesson-77)
 
 
 ## Tasks from acmp
