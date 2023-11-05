@@ -77,6 +77,8 @@
 + [Lesson 75 2032. Two Out of Three](#Leetcode-Lesson-75) ![icon][done]
 + [Lesson 76 52. N-Queens II](#Leetcode-Lesson-76) ![icon][done]
 + [Lesson 77 146. LRU Cache](#Leetcode-Lesson-77) ![icon][done]
++ [Lesson 78 401. Binary Watch](#Leetcode-Lesson-78) ![icon][done]
++ [Lesson 79 20. Valid Parentheses](#Leetcode-Lesson-79) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -3109,3 +3111,87 @@ lRUCache.get(4);    // return 4
 0 <= value <= 105
 At most 2 * 105 calls will be made to get and put.
 ```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 78
+
+401 Binary Watch
+-
+
+A binary watch has 4 LEDs on the top to represent the hours (0-11), and 6 LEDs on the bottom to represent the minutes 
+(0-59). Each LED represents a zero or one, with the least significant bit on the right.
+
+- For example, the below binary watch reads "4:51".
+
+![78_leetcode](src/main/resources/image/leetcode_78_401_Binary_Watch.png)</br>
+
+Given an integer `turnedOn` which represents the number of LEDs that are currently on (ignoring the PM), 
+return all possible times the watch could represent. You may return the answer in any order.
+
+The hour must not contain a leading zero.
+
+- For example, "01:00" is not valid. It should be "1:00".
+
+The minute must consist of two digits and may contain a leading zero.
+
+- For example, "10:2" is not valid. It should be "10:02".
+
+**Example 1:**
+```
+Input: turnedOn = 1
+Output: ["0:01","0:02","0:04","0:08","0:16","0:32","1:00","2:00","4:00","8:00"]
+```
+
+**Example 2:**
+```
+Input: turnedOn = 9
+Output: []
+```
+
+**Constraints:**
+```
+    0 <= turnedOn <= 10
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 79
+
+20 Valid Parentheses
+-
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+1. Open brackets must be closed by the same type of brackets. 
+2. Open brackets must be closed in the correct order. 
+3. Every close bracket has a corresponding open bracket of the same type.
+
+**Example 1:**
+```
+nput: s = "()"
+Output: true
+```
+
+**Example 2:**
+```
+Input: s = "()[]{}"
+Output: true
+```
+
+**Example 3:**
+```
+Input: s = "(]"
+Output: false
+```
+
+**Constraints:**
+```
+    1 <= s.length <= 104
+    s consists of parentheses only '()[]{}'.
+```
+
+[к оглавлению](#Tasks-from-leetcode)
+

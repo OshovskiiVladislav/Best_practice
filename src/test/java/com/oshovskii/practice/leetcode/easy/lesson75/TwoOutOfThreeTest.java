@@ -1,4 +1,4 @@
-package com.oshovskii.practice.leetcode.easy.lesson79;
+package com.oshovskii.practice.leetcode.easy.lesson75;
 
 import com.oshovskii.practice.leetcode.easy.lesson75.TwoOutOfThreeSolution;
 import org.junit.jupiter.api.BeforeEach;

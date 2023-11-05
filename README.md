@@ -89,6 +89,8 @@
 + [Lesson 75 2032. Two Out of Three](#Leetcode-Lesson-75)
 + [Lesson 76 52. N-Queens II](#Leetcode-Lesson-76)
 + [Lesson 77 146. LRU Cache](#Leetcode-Lesson-77)
++ [Lesson 78 401. Binary Watch](#Leetcode-Lesson-78)
++ [Lesson 79 20. Valid Parentheses](#Leetcode-Lesson-79)
 
 
 ## Tasks from acmp

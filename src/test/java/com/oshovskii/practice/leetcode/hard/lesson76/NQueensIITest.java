@@ -14,7 +14,6 @@ class NQueensIITest {
         nQueensIIClass = new NQueensIISolution();
     }
 
-
     @Test
     void totalNQueens_size_4x4() {
         // Config
