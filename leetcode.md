@@ -79,6 +79,7 @@
 + [Lesson 77 146. LRU Cache](#Leetcode-Lesson-77) ![icon][done]
 + [Lesson 78 401. Binary Watch](#Leetcode-Lesson-78) ![icon][done]
 + [Lesson 79 20. Valid Parentheses](#Leetcode-Lesson-79) ![icon][done]
++ [Lesson 80 572. Subtree of Another Tree](#Leetcode-Lesson-80) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -3195,3 +3196,37 @@ Output: false
 
 [к оглавлению](#Tasks-from-leetcode)
 
+
+## Leetcode Lesson 80
+
+572 Subtree of Another Tree
+-
+Given the roots of two binary trees `root` and `subRoot`, return `true` if there is a subtree of `root` 
+with the same structure and node values of subRoot and false otherwise.
+
+A subtree of a binary tree `tree` is a tree that consists of a node in `tree` and all of this node's descendants. 
+The tree `tree` could also be considered as a subtree of itself.
+
+**Example 1:**
+![80_leetcode](src/main/resources/image/leetcode80_SubtreeOfAnotherTree_1.png)</br>
+```
+Input: root = [3,4,5,1,2], subRoot = [4,1,2]
+Output: true
+```
+
+**Example 2:**
+![80_leetcode](src/main/resources/image/leetcode80_SubtreeOfAnotherTree_2.png)</br>
+```
+Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
+Output: false
+```
+
+**Constraints:**
+```
+    The number of nodes in the root tree is in the range [1, 2000].
+    The number of nodes in the subRoot tree is in the range [1, 1000].
+    -104 <= root.val <= 104
+    -104 <= subRoot.val <= 104
+```
+
+[к оглавлению](#Tasks-from-leetcode)
