@@ -93,6 +93,7 @@
 + [Lesson 79 20. Valid Parentheses](#Leetcode-Lesson-79)
 + [Lesson 80 572. Subtree of Another Tree](#Leetcode-Lesson-80)
 + [Lesson 81 507. Perfect Number](#Leetcode-Lesson-81)
++ [Lesson 82 643. Maximum Average Subarray I](#Leetcode-Lesson-82)
 
 
 ## Tasks from acmp
