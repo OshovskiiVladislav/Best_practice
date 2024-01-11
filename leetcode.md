@@ -82,6 +82,7 @@
 + [Lesson 80 572. Subtree of Another Tree](#Leetcode-Lesson-80) ![icon][done]
 + [Lesson 81 507. Perfect Number](#Leetcode-Lesson-81) ![icon][done]
 + [Lesson 82 643. Maximum Average Subarray I](#Leetcode-Lesson-82) ![icon][done]
++ [Lesson 83 142. Linked List Cycle II](#Leetcode-Lesson-83) ![icon][done]
 
 
 [Список разделов](README.md)
@@ -3126,7 +3127,7 @@ At most 2 * 105 calls will be made to get and put.
 A binary watch has 4 LEDs on the top to represent the hours (0-11), and 6 LEDs on the bottom to represent the minutes 
 (0-59). Each LED represents a zero or one, with the least significant bit on the right.
 
-- For example, the below binary watch reads "4:51".
+- For example, the below binary watch reads "4:51".</br>
 
 ![78_leetcode](src/main/resources/image/leetcode_78_401_Binary_Watch.png)</br>
 
@@ -3209,14 +3210,14 @@ with the same structure and node values of subRoot and false otherwise.
 A subtree of a binary tree `tree` is a tree that consists of a node in `tree` and all of this node's descendants. 
 The tree `tree` could also be considered as a subtree of itself.
 
-**Example 1:**
+**Example 1:**</br>
 ![80_leetcode](src/main/resources/image/leetcode80_SubtreeOfAnotherTree_1.png)</br>
 ```
 Input: root = [3,4,5,1,2], subRoot = [4,1,2]
 Output: true
 ```
 
-**Example 2:**
+**Example 2:**</br>
 ![80_leetcode](src/main/resources/image/leetcode80_SubtreeOfAnotherTree_2.png)</br>
 ```
 Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
@@ -3293,5 +3294,54 @@ Output: 5.00000
     1 <= k <= n <= 105
     -104 <= nums[i] <= 104
 ```
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 83
+
+142 Linked List Cycle II
+-
+Given the `head` of a linked list, return the node where the cycle begins. If there is no cycle, return `null`.
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously 
+following the next pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer 
+is connected to (0-indexed). It is `-1` if there is no cycle. Note that `pos` is not passed as a parameter.
+
+Do not modify the linked list.
+
+**Example 1:**</br>
+![83_leetcode_1](src/main/resources/image/leetcode_83_1.png)</br>
+```
+Input: head = [3,2,0,-4], pos = 1
+Output: tail connects to node index 1
+Explanation: There is a cycle in the linked list, where tail connects to the second node.
+```
+
+
+**Example 2:**</br>
+![83_leetcode_2](src/main/resources/image/leetcode_83_2.png)</br>
+```
+Input: head = [1,2], pos = 0
+Output: tail connects to node index 0
+Explanation: There is a cycle in the linked list, where tail connects to the first node.
+```
+
+
+**Example 3:**</br>
+![83_leetcode_3](src/main/resources/image/leetcode_83_3.png)</br>
+```
+Input: head = [1], pos = -1
+Output: no cycle
+Explanation: There is no cycle in the linked list.
+```
+
+
+**Constraints:**
+```
+    The number of the nodes in the list is in the range [0, 104].
+    -105 <= Node.val <= 105
+    pos is -1 or a valid index in the linked-list.
+```
+**Follow up:** Can you solve it using O(1) (i.e. constant) memory?
 
 [к оглавлению](#Tasks-from-leetcode)
