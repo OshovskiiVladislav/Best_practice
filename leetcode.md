@@ -83,11 +83,14 @@
 + [Lesson 81 507. Perfect Number](#Leetcode-Lesson-81) ![icon][done]
 + [Lesson 82 643. Maximum Average Subarray I](#Leetcode-Lesson-82) ![icon][done]
 + [Lesson 83 142. Linked List Cycle II](#Leetcode-Lesson-83) ![icon][done]
++ [Lesson 84 108. Convert Sorted Array to Binary Search Tree](#Leetcode-Lesson-84) ![icon][done]
 
 
 [Список разделов](README.md)
 
 [done]:src/main/resources/image/done.png
+[142. Linked List Cycle II]:src/main/java/com/oshovskii/practice/leetcode/medium/lesson83/LinkedListCycleIISolution.java
+[108. Convert Sorted Array to Binary Search Tree]:src/main/java/com/oshovskii/practice/leetcode/easy/lesson84/ConvertSortedArrayToBinarySearchTreeSolution.java
 
 ## Leetcode Lesson 1 
 
@@ -3343,5 +3346,44 @@ Explanation: There is no cycle in the linked list.
     pos is -1 or a valid index in the linked-list.
 ```
 **Follow up:** Can you solve it using O(1) (i.e. constant) memory?
+
+Code: [142. Linked List Cycle II]
+
+[к оглавлению](#Tasks-from-leetcode)
+
+
+## Leetcode Lesson 84
+
+108 Convert Sorted Array to Binary Search Tree
+-
+Given an integer array `nums` where the elements are sorted in *ascending order*, convert it to a
+height-balanced binary search tree.
+
+**Example 1:**</br>
+![83_leetcode_1](src/main/resources/image/leetcode_84_1.png)</br>
+```
+Input: nums = [-10,-3,0,5,9]
+Output: [0,-3,9,-10,null,5]
+Explanation: [0,-10,5,null,-3,null,9] is also accepted:
+```
+![83_leetcode_3](src/main/resources/image/leetcode_84_3.png)</br>
+
+**Example 2:**</br>
+![83_leetcode_2](src/main/resources/image/leetcode_84_2.png)</br>
+```
+Input: nums = [1,3]
+Output: [3,1]
+Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
+```
+
+**Constraints:**
+```
+    1 <= nums.length <= 104
+    -104 <= nums[i] <= 104
+    nums is sorted in a strictly increasing order.
+```
+
+
+Code: [108. Convert Sorted Array to Binary Search Tree]
 
 [к оглавлению](#Tasks-from-leetcode)

@@ -95,6 +95,7 @@
 + [Lesson 81 507. Perfect Number](#Leetcode-Lesson-81)
 + [Lesson 82 643. Maximum Average Subarray I](#Leetcode-Lesson-82)
 + [Lesson 83 142. Linked List Cycle II](#Leetcode-Lesson-83)
++ [Lesson 84 108. Convert Sorted Array to Binary Search Tree](#Leetcode-Lesson-84)
 
 
 ## Tasks from acmp
